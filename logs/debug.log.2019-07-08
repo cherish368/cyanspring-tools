@@ -1,0 +1,6 @@
+2019-07-08 16:52:44,485 INFO[org.cyanspring.tools.service.HistoricalDataService:208] - linsert:34002
+2019-07-08 19:11:59,466 INFO[org.cyanspring.tools.service.HistoricalDataService:213] - linsert:407924
+2019-07-08 19:16:20,908 INFO[org.cyanspring.tools.service.HistoricalDataService:210] - lset:OK
+2019-07-08 19:21:50,998 INFO[org.cyanspring.tools.service.HistoricalDataService:214] - linsert:203969
+2019-07-08 19:24:58,227 INFO[org.cyanspring.tools.service.HistoricalDataService:214] - linsert:1023027
+2019-07-08 19:38:36,298 INFO[org.cyanspring.tools.service.HistoricalDataService:214] - linsert:341015
