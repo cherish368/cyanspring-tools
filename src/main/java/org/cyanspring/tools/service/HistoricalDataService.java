@@ -37,18 +37,21 @@ public class HistoricalDataService {
     private static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 
     private String templateSymbol = "H_INDEX_%s_%s";
-    private String[] keyLineTypeArray = new String[]{"1M", "3M", "5M", "10M", "15M", "30M", "1H", "2H",
-            "4H", "6H", "8H", "12H", "D", "W", "MTH"};
-    private long leftIndex = 0L;
-    private long rightIndex = 0L;
+    private String oneKeyLine = "1M";
+    private String mthKeyLine = "MTH";
+    private Long indexRange = 150L;
+    private String[] keyLineType = new String[]{"3M", "5M", "10M", "15M", "30M", "1H", "2H",
+            "4H", "6H", "8H", "12H", "D", "W"};
 
     public static void main(String[] args) {
-        PropertyConfigurator.configure(System.getProperty("user.dir") + "/log4j.properties");
+        PropertyConfigurator.configure("log4j.properties");
         long start = System.currentTimeMillis();
         HistoricalDataService historicalDataService = new HistoricalDataService();
-        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
-        //historicalDataService.insertOrUpdateByJson();
-        historicalDataService.exportAllJson("BTCUSDT", "2017-11-13 00:00:00", "2019-06-07 22:14");
+        //simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+        HistoricalBase historicalBase = new HistoricalBase();
+        historicalBase.setLow(0.00002903);
+        historicalDataService.updateByValue("XRPBTC", "2019-07-10 00:00", historicalBase);
+        //historicalDataService.exportAllJson("XRPBTC", "2019-07-10 00:00", "2019-07-10 01:00");
         long end = System.currentTimeMillis();
         log.info((end - start) * 100 * 0.01 / 1000 / 60 + " minutes");
     }
@@ -56,12 +59,12 @@ public class HistoricalDataService {
     /**
      * K线按时间段导出 1M/3M/5M/10M/15M/.../MTH
      *
-     * @param tempSymbol 例如 ETH.BTC
-     * @param startTime  例如 2019-06-07 21:14
-     * @param endTime    例如 2019-06-07 22:14
+     * @param symbol    例如 ETH.BTC
+     * @param startTime 例如 2019-06-07 21:14
+     * @param endTime   例如 2019-06-07 22:14
      * @return String
      */
-    public String exportAllJson(String tempSymbol, String startTime, String endTime) {
+    public String exportAllJson(String symbol, String startTime, String endTime) {
         Jedis jedis = null;
         try {
             Date startDate = TimeUtil.parseDate(startTime, pattern);
@@ -74,42 +77,62 @@ public class HistoricalDataService {
             jedis = JedisService.getInstance().getJedis();
             log.info("jedis DB {}", jedis.getDB());
             Map<String, Object> results = new LinkedHashMap<>();
-            for (String keyLine : keyLineTypeArray) {
-                String realSymbol = String.format(templateSymbol, tempSymbol, keyLine);
-                Long llen = jedis.llen(realSymbol);
-                if (llen == null || llen == 0) {
+            //1、export 1min data
+            String oneSymbol = String.format(templateSymbol, symbol, oneKeyLine);
+            final Date startOneTime = TimeUtil.getKeyTime(startDate, oneKeyLine);
+            final Date endOneTime = TimeUtil.getKeyTime(endDate, oneKeyLine);
+            long endPosition = getPosition(jedis, oneSymbol, oneKeyLine, startDate, startOneTime);
+            long startPosition = getPosition(jedis, oneSymbol, oneKeyLine, endDate, endOneTime);
+            //考虑1min可能有数据缺失情况，扩大范围检索
+            List<String> oneList = jedis.lrange(oneSymbol, startPosition < indexRange ? 0 : startPosition - indexRange, endPosition + indexRange);
+            List<String> result = oneList.stream().filter(item -> {
+                HistoricalPrice price = JSON.parseObject(item, HistoricalPrice.class);
+                return (price.getKeyTime().getTime() >= startOneTime.getTime() &&
+                        price.getKeyTime().getTime() <= endOneTime.getTime());
+            }).collect(Collectors.toList());
+            results.put(oneSymbol, result);
+            //2、export 3min/5min/.../1week data
+            //认为数据没有缺失
+            for (String keyLine : keyLineType) {
+                String realSymbol = String.format(templateSymbol, symbol, keyLine);
+                Long length = jedis.llen(realSymbol);
+                if (length == null || length == 0) {
                     return Message.SYMBOL_NO_EXIST.getText();
                 }
-                //计算时间段内的时间
-                Date keyStart = TimeUtil.getKeyTime(startDate, keyLine);
-                Date keyEnd = TimeUtil.getKeyTime(endDate, keyLine);
-                List<HistoricalPrice> list = new ArrayList<>();
-                flag:
-                for (int i = 0; i < llen; i++) {
-                    String lindex = jedis.lindex(realSymbol, i);
-                    if (!StringUtils.isEmpty(lindex)) {
-                        HistoricalPrice historicalPrice = JSON.parseObject(lindex, HistoricalPrice.class);
-                        long time = historicalPrice.getKeyTime().getTime();
-                        if (time < keyStart.getTime()) {
-                            continue flag;
-                        } else if (time >= keyStart.getTime()) {
-                            list.add(historicalPrice);
-                        } else if (time > keyEnd.getTime()) {
-                            break flag;
-                        }
-                    }
-                }
-                List<String> collect = list.stream().sorted((a, b) -> Long.compare(a.getKeyTime().getTime(), b.getKeyTime().getTime()))
-                        .map(s -> JSON.toJSONString(s)).collect(Collectors.toList());
+                long rightPosition = getPosition(jedis, realSymbol, keyLine, startDate, null);
+                long leftPosition = getPosition(jedis, realSymbol, keyLine, endDate, null);
+                List<String> collect = jedis.lrange(realSymbol, leftPosition, rightPosition);
                 results.put(realSymbol, collect);
             }
+            //3、export 1month data
+            String mthSymbol = String.format(templateSymbol, symbol, mthKeyLine);
+            Long length = jedis.llen(mthSymbol);
+            Date startKeyTime = TimeUtil.getKeyTime(startDate, mthKeyLine);
+            Date endKeyTime = TimeUtil.getKeyTime(endDate, mthKeyLine);
+            List<String> list = new ArrayList<>();
+            //月数据量小，从头开始检索
+            for (int i = 0; i < length; i++) {
+                String lindex = jedis.lindex(mthSymbol, i);
+                if (!StringUtils.isEmpty(lindex)) {
+                    HistoricalPrice historicalPrice = JSON.parseObject(lindex, HistoricalPrice.class);
+                    long time = historicalPrice.getKeyTime().getTime();
+                    if (time < startKeyTime.getTime()) {
+                        break;
+                    } else if (time >= startKeyTime.getTime()) {
+                        list.add(JSON.toJSONString(historicalPrice));
+                    } else if (time > endKeyTime.getTime()) {
+                        continue;
+                    }
+                }
+            }
+            results.put(mthSymbol, list);
             JSONArray jsonObject = JSONArray.fromObject(results);
             String jsonString = jsonObject.toString();
             String fullPath = PropertiesUtil.getAttribute(nameProperties, nameExport);
             JsonFileUtil.createJsonFile(jsonString, fullPath);
             return fullPath;
         } catch (ParseException e) {
-            e.printStackTrace();
+            log.error(e.getMessage());
         } finally {
             JedisService.getInstance().closeJedis(jedis);
         }
@@ -123,57 +146,72 @@ public class HistoricalDataService {
      * @return message
      */
     public Message insertOrUpdateByJson() {
-        String fullPath = PropertiesUtil.getAttribute(nameProperties, nameImport);
-        File myFile = new File(fullPath);
-        if (!myFile.exists()) {
-            log.error(Message.FILE_NO_EXIST.getText());
-            return Message.FILE_NO_EXIST;
-        }
-        Map<String, List<HistoricalPrice>> map = JsonFileUtil.readJsonFile(fullPath, HistoricalPrice.class);
-        log.info("Map size {}", map.size());
-        Jedis jedis = JedisService.getInstance().getJedis();
-        //是否需要支持事务 TODO
-        for (String realSymbol : map.keySet()) {
-            //保证按时间正序
-            List<HistoricalPrice> list = map.get(realSymbol);
-            System.out.println("size:" + list.size());
-            if (list != null && !list.isEmpty()) {
-                rightIndex = jedis.llen(realSymbol);
-                if (rightIndex == 0) {
-                    return Message.SYMBOL_NO_EXIST;
-                }
-                leftIndex = 0;
-                String[] symbols = realSymbol.split("_");
-                for (int i = 0; i < list.size(); i++) {
-                    //查询第一个最小时间烛台对应的上一个烛台，找到插入或更新位置
-                    long interval = TimeUtil.getInterval(list.get(i).getKeyTime(), symbols[symbols.length - 1]);
-                    Date prevDate = new Date(list.get(i).getKeyTime().getTime() - interval);
-                    String prevKeyTime = simpleDateFormat.format(prevDate);
-                    long total = 0;
-                    if (i == 0) {
-                        total = list.size();
-                    }
-                    Message message = insertOrUpdateModel(list.get(i), jedis, realSymbol, prevKeyTime, total);
-                    if (Message.OK != message) {
-                        log.error(message.getText());
-                        return message;
-                    }
-                }
+        Jedis jedis = null;
+        try {
+            String fullPath = PropertiesUtil.getAttribute(nameProperties, nameImport);
+            File myFile = new File(fullPath);
+            if (!myFile.exists()) {
+                log.error(Message.FILE_NO_EXIST.getText());
+                return Message.FILE_NO_EXIST;
             }
+            Map<String, List<HistoricalPrice>> map = JsonFileUtil.readJsonFile(fullPath, HistoricalPrice.class);
+            log.info("Map size {}", map.size());
+            jedis = JedisService.getInstance().getJedis();
+            for (String key : map.keySet()) {
+                List<HistoricalPrice> list = map.get(key);
+                log.info(key + ":size:" + list.size());
+                list.sort((a, b) -> Long.compare(a.getKeyTime().getTime(), b.getKeyTime().getTime()));
+                Long length = jedis.llen(key);
+                String[] splits = key.split("_");
+                long interval = TimeUtil.getInterval(splits[splits.length - 1]);
+                long leftPosition = 0;
+                long rightPosition = length - 1;
+                if (!key.contains(mthKeyLine)) {
+                    if (key.contains(oneKeyLine)) {
+                        //1、deal 1min data
+                        String lIndex = jedis.lindex(key, 0);
+                        HistoricalPrice lPrice = JSON.parseObject(lIndex, HistoricalPrice.class);
+                        HistoricalPrice lastPrice = list.get(0);
+                        HistoricalPrice firstPrice = list.get(list.size() - 1);
+                        leftPosition = (lPrice.getKeyTime().getTime() - firstPrice.getKeyTime().getTime()) / interval;
+                        leftPosition = leftPosition - indexRange < 0 ? 0 : leftPosition - indexRange;
+                        rightPosition = (lPrice.getKeyTime().getTime() - lastPrice.getKeyTime().getTime()) / interval;
+                        rightPosition = rightPosition + indexRange > length ? length : rightPosition + indexRange;
+                    } else {
+                        //2、deal 3min/.../1week data
+                        String lIndex = jedis.lindex(key, 0);
+                        HistoricalPrice lPrice = JSON.parseObject(lIndex, HistoricalPrice.class);
+                        HistoricalPrice lastPrice = list.get(0);
+                        HistoricalPrice firstPrice = list.get(list.size() - 1);
+                        leftPosition = (lPrice.getKeyTime().getTime() - firstPrice.getKeyTime().getTime()) / interval;
+                        rightPosition = (lPrice.getKeyTime().getTime() - lastPrice.getKeyTime().getTime()) / interval + 1;
+                    }
+                    //3、deal 1month data
+                }
+                insertOrUpdateModel(list, jedis, key, leftPosition, rightPosition, interval);
+            }
+        } catch (Exception e) {
+            log.error(e.getMessage());
+        } finally {
+            JedisService.getInstance().closeJedis(jedis);
         }
-        JedisService.getInstance().closeJedis(jedis);
         return Message.OK;
     }
 
-    private Message insertOrUpdateModel(HistoricalPrice item, Jedis jedis, String realSymbol, String prevKeyTime, long size) {
-        for (long i = leftIndex; i < rightIndex; i++) {
-            String index = jedis.lindex(realSymbol, i);
-            if (index.contains(prevKeyTime)) {
-                String save = jedis.lindex(realSymbol, i - 1);
-                if (!StringUtils.isEmpty(save)) {
+    private void insertOrUpdateModel(List<HistoricalPrice> list, Jedis jedis, String key,
+                                     long leftPosition, long rightPosition, long interval) {
+        for (HistoricalPrice item : list) {
+            Date prevDate = new Date(item.getKeyTime().getTime() - interval);
+            String prevKeyTime = simpleDateFormat.format(prevDate);
+            inner:
+            for (long i = rightPosition; i >= leftPosition; i--) {
+                String index = jedis.lindex(key, i);
+                if (!StringUtils.isEmpty(index) && index.contains(prevKeyTime)) {
+                    String save = jedis.lindex(key, i - 1);
                     HistoricalPrice savePrice = JSON.parseObject(save, HistoricalPrice.class);
+                    boolean flag = false;
                     if (item.getKeyTime().getTime() == savePrice.getKeyTime().getTime()) {
-                        //存在更新
+                        //exist update
                         HistoricalPrice prevPrice = JSON.parseObject(index, HistoricalPrice.class);
                         double prevClose = prevPrice.getClose();
                         item.setOpen(prevClose);
@@ -183,38 +221,24 @@ public class HistoricalDataService {
                         if (PriceUtils.LessThan(prevClose, item.getLow())) {
                             item.setLow(prevClose);
                         }
-                        jedis.lset(realSymbol, i - 1, JSON.toJSONString(item));
-                        log.info(realSymbol + " lset:" + JSON.toJSONString(item));
+                        item.setVolume(1.0); //test set
+                        jedis.lset(key, i - 1, JSON.toJSONString(item));
+                        log.info(key + " lset:" + (i - 1) + ":" + JSON.toJSONString(item));
+                        flag = true;
                     } else {
-                        //不存在插入
-                        jedis.linsert(realSymbol, BinaryClient.LIST_POSITION.BEFORE, index, JSON.toJSONString(item));
-                        log.info(realSymbol + " linsert:" + JSON.toJSONString(item));
+                        //not exist insert
+                        item.setVolume(2.0); //test set
+                        jedis.linsert(key, BinaryClient.LIST_POSITION.BEFORE, index, JSON.toJSONString(item));
+                        log.info(key + " linsert:" + (i - 1) + ":" + JSON.toJSONString(item));
+                        flag = true;
                     }
-                    if (size != 0) {
-                        leftIndex = i - 2 * size;
-                        if (leftIndex < 0) {
-                            leftIndex = 0;
-                        }
-                        rightIndex = i + 2 * size;
-                        long length = jedis.llen(realSymbol);
-                        if (rightIndex > length) {
-                            rightIndex = length;
-                        }
+                    if (flag) {
+                        break inner;
                     }
-                    return Message.OK;
-                }
-                //针对某个keyLine检索完毕还没找到上一个烛台直接报错，不再继续检索下一个keyLine
-                //弊端：无法完成对第一个烛台的K线的修正
-                if (i == rightIndex - 1) {
-                    log.error(Message.TIME_VALUE_ERROR.getText());
-                    return Message.TIME_VALUE_ERROR;
                 }
             }
         }
-        log.error(Message.FAILED.getText());
-        return Message.FAILED;
     }
-
 
     /**
      * 给定时间通过分析进行修复K线数据
@@ -224,107 +248,32 @@ public class HistoricalDataService {
      * @return message
      */
     public Message updateByValue(String symbol, String stringTime, HistoricalBase base) {
-
         if (base.getHigh() == null && base.getOpen() == null
                 && base.getLow() == null && base.getClose() == null) {
             return Message.SELECT_VALUE_UPDATE;
         }
+        Jedis jedis = null;
         try {
             Date date = TimeUtil.parseDate(stringTime, pattern);
-            Jedis jedis = JedisService.getInstance().getJedis();
-            //是否需要支持事务 TODO
-            for (String keyLine : keyLineTypeArray) {
-                String realSymbol = String.format(templateSymbol, symbol, keyLine);
-                long length = jedis.llen(realSymbol);
-                if (length == 0) {
-                    return Message.SYMBOL_NO_EXIST;
-                }
-                Date keyTime = TimeUtil.getKeyTime(date, keyLine);
-                String format = simpleDateFormat.format(keyTime);
-                log.info("format:" + format);
-                flag:
-                for (long i = 0; i < length; i++) {
-                    String index = jedis.lindex(realSymbol, i);
-                    log.info(index);
-                    if (!StringUtils.isEmpty(index) && index.contains(format)) {
-                        HistoricalPrice currPrice = JSON.parseObject(index, HistoricalPrice.class);
-                        //对指定的值赋值
-                        if (base.getHigh() != null) {
-                            currPrice.setHigh(base.getHigh());
-                        }
-                        if (base.getOpen() != null) {
-                            currPrice.setOpen(base.getOpen());
-                        }
-                        if (base.getLow() != null) {
-                            currPrice.setLow(base.getLow());
-                        }
-                        if (base.getClose() != null) {
-                            currPrice.setClose(base.getClose());
-                        }
-                        //根据上一个K线烛台修正数据
-                        String prevIndex = jedis.lindex(realSymbol, i + 1);
-                        HistoricalPrice prevPrice = JSON.parseObject(prevIndex, HistoricalPrice.class);
-                        double prevClose = prevPrice.getClose();
-                        currPrice.setOpen(prevClose);
-                        if (PriceUtils.GreaterThan(prevClose, currPrice.getHigh())) {
-                            currPrice.setHigh(prevClose);
-                        }
-                        if (PriceUtils.LessThan(prevClose, currPrice.getLow())) {
-                            currPrice.setLow(prevClose);
-                        }
-                        jedis.lset(realSymbol, i, JSON.toJSONString(currPrice));
-                        log.info(realSymbol + " lset:" + JSON.toJSONString(currPrice));
-                        break flag;
-                    }
-                    //针对某个keyLine检索完毕还没找到直接报错，不在继续检索下一个keyLine
-                    //弊端：无法完成对第一个烛台的K线的修正
-                    if (i == length - 1) {
-                        log.error(Message.TIME_VALUE_ERROR.getText());
-                        return Message.TIME_VALUE_ERROR;
-                    }
-                }
-            }
-            return Message.OK;
-        } catch (ParseException e) {
-            log.error(e.getMessage());
-            return Message.START_TIME_ERROR;
-        }
-    }
-
-    public Message updateByValue2(String symbol, String stringTime, HistoricalBase base) {
-        if (base.getHigh() == null && base.getOpen() == null
-                && base.getLow() == null && base.getClose() == null) {
-            return Message.SELECT_VALUE_UPDATE;
-        }
-        try {
-            Date date = TimeUtil.parseDate(stringTime, pattern);
-            Jedis jedis = JedisService.getInstance().getJedis();
-            String oneIndex = null;
-            HistoricalPrice onePrice = null;
-            for (int i = 0; i < keyLineTypeArray.length; i++) {
-                String keyLine = keyLineTypeArray[i];
-                String realSymbol = String.format(templateSymbol, symbol, keyLine);
-                String firstIndex = jedis.lindex(realSymbol, 0);
-                HistoricalPrice firstPrice = JSON.parseObject(firstIndex, HistoricalPrice.class);
-                if (i == 0) {
-                    oneIndex = firstIndex;
-                    onePrice = JSON.parseObject(firstIndex, HistoricalPrice.class);
-                }
-                //cal index position
-                Date keyTime = TimeUtil.getKeyTime(date, keyLine);
-                long interval = TimeUtil.getInterval(keyTime, keyLine);
-                long position = (firstPrice.getKeyTime().getTime() - keyTime.getTime()) / interval;
-                long swing = TimeUtil.getTimeSwing(keyLine);
-                long left = position < swing ? 0 : position - swing;
-                long right = position + swing;
-                List<String> lrange = jedis.lrange(realSymbol, left, right);
+            jedis = JedisService.getInstance().getJedis();
+            //1、deal 1min data
+            String oneSymbol = String.format(templateSymbol, symbol, oneKeyLine);
+            long onePosition = getPosition(jedis, oneSymbol, oneKeyLine, date, null);
+            String oneIndex = jedis.lindex(oneSymbol, onePosition);
+            if (!oneIndex.contains(stringTime)) {
+                //数据量，考虑有缺失数据的情况出现，扩大范围查找
+                long left = onePosition < indexRange ? 0 : onePosition - indexRange;
+                Long length = jedis.llen(oneSymbol);
+                long right = onePosition + indexRange > length ? length : onePosition + indexRange;
+                List<String> lrange = jedis.lrange(oneSymbol, left, right);
                 long num = -1L;
                 if (lrange != null && !lrange.isEmpty()) {
                     inner:
                     for (long j = left; j <= right; j++) {
                         String index = lrange.get((int) j);
-                        if (index.contains(simpleDateFormat.format(keyTime))) {
+                        if (!StringUtils.isEmpty(index) && index.contains(stringTime)) {
                             num = j;
+                            onePosition = j;
                             break inner;
                         }
                     }
@@ -332,63 +281,155 @@ public class HistoricalDataService {
                 if (num == -1L) {
                     return Message.TIME_VALUE_ERROR;
                 }
-                String currIndex = jedis.lindex(realSymbol, num);
+                oneIndex = jedis.lindex(oneSymbol, num);
+            }
+            HistoricalPrice onePrice = JSON.parseObject(oneIndex, HistoricalPrice.class);
+            //对指定的值赋值
+            if (base.getHigh() != null) {
+                onePrice.setHigh(base.getHigh());
+            }
+            if (base.getOpen() != null) {
+                onePrice.setOpen(base.getOpen());
+            }
+            if (base.getLow() != null) {
+                onePrice.setLow(base.getLow());
+            }
+            if (base.getClose() != null) {
+                onePrice.setClose(base.getClose());
+            }
+            //根据上一个K线烛台修正数据
+            setValueByPrev(jedis, onePrice, onePosition, oneSymbol);
+            //2、deal 3min/.../1week data
+            for (int i = 0; i < keyLineType.length; i++) {
+                String keyLine = keyLineType[i];
+                String realSymbol = String.format(templateSymbol, symbol, keyLine);
+                String firstIndex = jedis.lindex(realSymbol, 0);
+                HistoricalPrice firstPrice = JSON.parseObject(firstIndex, HistoricalPrice.class);
+
+                //数据量大，烛台间隔稳定，通过间隔计算位置查询，认为数据没有丢失
+                Date keyTime = TimeUtil.getKeyTime(date, keyLine);
+                long interval = TimeUtil.getInterval(keyLine);
+                long position = (firstPrice.getKeyTime().getTime() - keyTime.getTime()) / interval;
+                String currIndex = jedis.lindex(realSymbol, position);
                 HistoricalPrice currPrice = JSON.parseObject(currIndex, HistoricalPrice.class);
-                //对指定的值赋值
-                if (i == 0) {
-                    if (base.getHigh() != null) {
-                        currPrice.setHigh(base.getHigh());
-                    }
-                    if (base.getOpen() != null) {
-                        currPrice.setOpen(base.getOpen());
-                    }
-                    if (base.getLow() != null) {
-                        currPrice.setLow(base.getLow());
-                    }
-                    if (base.getClose() != null) {
-                        currPrice.setClose(base.getClose());
-                    }
-                } else {
-                    List<Date> keyTimes = TimeUtil.getKeyTimes(date, keyLine);
-                    if (keyTimes != null && keyTimes.size() == 2) {
-                        long oneInterval = TimeUtil.getInterval(null, "1M");
-                        long beginPosition = (onePrice.getKeyTime().getTime() - keyTimes.get(0).getTime()) / oneInterval;
-                        long endPosition = (onePrice.getKeyTime().getTime() - keyTimes.get(1).getTime()) / oneInterval;
-                        List<String> list = jedis.lrange(realSymbol, beginPosition, endPosition);
-                        Stream<HistoricalPrice> tempStream = list.stream().map(s -> JSON.parseObject(s, HistoricalPrice.class));
-
-                        double max = tempStream.mapToDouble(HistoricalPrice::getHigh).max().getAsDouble();
-                        double min = tempStream.mapToDouble(HistoricalPrice::getLow).max().getAsDouble();
-                        if (PriceUtils.GreaterThan(max, currPrice.getHigh())) {
-                            currPrice.setHigh(max);
-                        }
-                        if (PriceUtils.LessThan(min, currPrice.getLow())) {
-                            currPrice.setLow(min);
-                        }
-                    }
-
+                //定位1min起始时间点
+                currPrice = setValueByTime(jedis, currPrice, date, keyLine, realSymbol);
+                if (currPrice == null) {
+                    return Message.ONE_MIN_DATA_NOT_FOUND;
                 }
                 //根据上一个K线烛台修正数据
-                String prevIndex = jedis.lindex(realSymbol, num + 1);
-                if (!StringUtils.isEmpty(prevIndex)) {
-                    HistoricalPrice prevPrice = JSON.parseObject(prevIndex, HistoricalPrice.class);
-                    double prevClose = prevPrice.getClose();
-                    currPrice.setOpen(prevClose);
-                    if (PriceUtils.GreaterThan(prevClose, currPrice.getHigh())) {
-                        currPrice.setHigh(prevClose);
-                    }
-                    if (PriceUtils.LessThan(prevClose, currPrice.getLow())) {
-                        currPrice.setLow(prevClose);
-                    }
-                }
-                jedis.lset(realSymbol, num, JSON.toJSONString(currPrice));
-                log.info(realSymbol + " lset:" + JSON.toJSONString(currPrice));
+                setValueByPrev(jedis, onePrice, position, realSymbol);
             }
+            //3、deal 1month data
+            String mthSymbol = String.format(templateSymbol, symbol, mthKeyLine);
+            Date keyTime = TimeUtil.getKeyTime(date, mthKeyLine);
+            String mthFormat = simpleDateFormat.format(keyTime);
+            long length = jedis.llen(mthKeyLine);
+            String mthIndex = "";
+            long mthPosition = 0;
+            //数据量小，烛台间隔不稳定，直接从头开始检索
+            for (long i = 0; i < length; i++) {
+                mthIndex = jedis.lindex(mthSymbol, i);
+                if (mthIndex.contains(mthFormat)) {
+                    mthPosition = i;
+                    break;
+                }
+            }
+            if (StringUtil.isEmpty(mthIndex)) {
+                return Message.MONTH_DATA_NOT_FOUND;
+            }
+            HistoricalPrice mthPrice = JSON.parseObject(mthIndex, HistoricalPrice.class);
+            mthPrice = setValueByTime(jedis, mthPrice, date, mthKeyLine, mthSymbol);
+            if (mthPrice == null) {
+                return Message.ONE_MIN_DATA_NOT_FOUND;
+            }
+            //根据上一个K线烛台修正数据
+            setValueByPrev(jedis, onePrice, mthPosition, mthSymbol);
             return Message.OK;
         } catch (ParseException e) {
             log.error(e.getMessage());
             return Message.START_TIME_ERROR;
+        } finally {
+            JedisService.getInstance().closeJedis(jedis);
         }
+    }
+
+    /**
+     * 根据当前时间获取1min上下范围内数据，
+     * 找到最高值和最低值处理并更新烛台
+     *
+     * @param jedis
+     * @param price
+     * @param date
+     * @param keyLine
+     * @param realSymbol
+     * @return
+     */
+    private HistoricalPrice setValueByTime(Jedis jedis, HistoricalPrice price, Date date, String keyLine, String realSymbol) {
+        List<Date> keyTimes = TimeUtil.getKeyTimes(date, keyLine);
+        long left = keyTimes.get(0).getTime();
+        long right = keyTimes.get(1).getTime();
+        List<String> list = jedis.lrange(realSymbol, left, right);
+        if (list == null || list.isEmpty()) {
+            return null;
+        }
+        Stream<HistoricalPrice> historicalPriceStream = list.stream().map(jsonStr -> JSON.parseObject(jsonStr, HistoricalPrice.class));
+        double maxHigh = historicalPriceStream.mapToDouble(HistoricalPrice::getHigh).max().getAsDouble();
+        double minLow = historicalPriceStream.mapToDouble(HistoricalBase::getLow).min().getAsDouble();
+        if (PriceUtils.GreaterThan(maxHigh, price.getHigh())) {
+            price.setHigh(maxHigh);
+        }
+        if (PriceUtils.LessThan(minLow, price.getLow())) {
+            price.setLow(minLow);
+        }
+        return price;
+    }
+
+
+    /**
+     * 根据上一个烛台修正当前烛台数据
+     *
+     * @param jedis
+     * @param price
+     * @param index
+     * @param realSymbol
+     */
+    private void setValueByPrev(Jedis jedis, HistoricalPrice price, long index, String realSymbol) {
+        String prevIndex = jedis.lindex(realSymbol, index + 1);
+        if (!StringUtils.isEmpty(prevIndex)) {
+            HistoricalPrice prevPrice = JSON.parseObject(prevIndex, HistoricalPrice.class);
+            double prevClose = prevPrice.getClose();
+            price.setOpen(prevClose);
+            if (PriceUtils.GreaterThan(prevClose, price.getHigh())) {
+                price.setHigh(prevClose);
+            }
+            if (PriceUtils.LessThan(prevClose, price.getLow())) {
+                price.setLow(prevClose);
+            }
+        }
+        String result = JSON.toJSONString(price);
+        jedis.lset(realSymbol, index, result);
+        log.info(realSymbol + " lset:" + result);
+    }
+
+
+    /**
+     * 计算烛台数据所在位置
+     *
+     * @param jedis
+     * @param realSymbol
+     * @param keyLine
+     * @param date
+     * @return
+     */
+    private long getPosition(Jedis jedis, String realSymbol, String keyLine, Date date, Date keyTime) {
+        String oneIndex = jedis.lindex(realSymbol, 0);
+        HistoricalPrice onePrice = JSON.parseObject(oneIndex, HistoricalPrice.class);
+        if (keyTime == null)
+            keyTime = TimeUtil.getKeyTime(date, keyLine);
+        long interval = TimeUtil.getInterval(keyLine);
+        long position = (onePrice.getKeyTime().getTime() - keyTime.getTime()) / interval;
+        return position;
     }
 
 

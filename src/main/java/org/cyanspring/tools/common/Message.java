@@ -33,6 +33,12 @@ public enum Message {
     TIME_VALUE_ERROR(7, MessageType.ERROR,
             new String[][]{{"en", "Time value error"},
                     {"cn", "时间错误，找不到上一个间隔时间K线"}}),
+    ONE_MIN_DATA_NOT_FOUND(7, MessageType.ERROR,
+            new String[][]{{"en", "1min list data not found"},
+                    {"cn", "1min集合数据找不到"}}),
+    MONTH_DATA_NOT_FOUND(7, MessageType.ERROR,
+            new String[][]{{"en", "month data not found"},
+                    {"cn", "月份数据找不到"}}),
     // end enum
     ;
 
