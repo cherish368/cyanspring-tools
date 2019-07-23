@@ -42,15 +42,17 @@ public class HistoricalDataService {
     private Long indexRange = 150L;
     private String[] keyLineType = new String[]{"3M", "5M", "10M", "15M", "30M", "1H", "2H",
             "4H", "6H", "8H", "12H", "D", "W"};
+    //private String[] keyLineType = new String[]{"W"};
 
     public static void main(String[] args) {
-        PropertyConfigurator.configure("log4j.properties");
+        PropertyConfigurator.configure("/log4j.properties");
         long start = System.currentTimeMillis();
         HistoricalDataService historicalDataService = new HistoricalDataService();
         //simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
         HistoricalBase historicalBase = new HistoricalBase();
-        historicalBase.setLow(0.00002903);
-        historicalDataService.updateByValue("XRPBTC", "2019-07-10 00:00", historicalBase);
+        historicalBase.setLow(0.03);
+        Message xrpbtc = historicalDataService.updateByValue("LTCUSD", "2019-06-05 23:59", historicalBase);
+        System.out.println(xrpbtc.getText());
         //historicalDataService.exportAllJson("XRPBTC", "2019-07-10 00:00", "2019-07-10 01:00");
         long end = System.currentTimeMillis();
         log.info((end - start) * 100 * 0.01 / 1000 / 60 + " minutes");
@@ -260,20 +262,20 @@ public class HistoricalDataService {
             String oneSymbol = String.format(templateSymbol, symbol, oneKeyLine);
             long onePosition = getPosition(jedis, oneSymbol, oneKeyLine, date, null);
             String oneIndex = jedis.lindex(oneSymbol, onePosition);
+            long oneLength = jedis.llen(oneSymbol);
             if (!oneIndex.contains(stringTime)) {
                 //数据量，考虑有缺失数据的情况出现，扩大范围查找
                 long left = onePosition < indexRange ? 0 : onePosition - indexRange;
-                Long length = jedis.llen(oneSymbol);
-                long right = onePosition + indexRange > length ? length : onePosition + indexRange;
+                long right = onePosition + indexRange > oneLength ? oneLength : onePosition + indexRange;
                 List<String> lrange = jedis.lrange(oneSymbol, left, right);
                 long num = -1L;
                 if (lrange != null && !lrange.isEmpty()) {
                     inner:
-                    for (long j = left; j <= right; j++) {
+                    for (long j = 0; j < right - left + 1; j++) {
                         String index = lrange.get((int) j);
                         if (!StringUtils.isEmpty(index) && index.contains(stringTime)) {
                             num = j;
-                            onePosition = j;
+                            onePosition = left + j;
                             break inner;
                         }
                     }
@@ -281,7 +283,7 @@ public class HistoricalDataService {
                 if (num == -1L) {
                     return Message.TIME_VALUE_ERROR;
                 }
-                oneIndex = jedis.lindex(oneSymbol, num);
+                oneIndex = jedis.lindex(oneSymbol, onePosition);
             }
             HistoricalPrice onePrice = JSON.parseObject(oneIndex, HistoricalPrice.class);
             //对指定的值赋值
@@ -300,6 +302,7 @@ public class HistoricalDataService {
             //根据上一个K线烛台修正数据
             setValueByPrev(jedis, onePrice, onePosition, oneSymbol);
             //2、deal 3min/.../1week data
+            String newIndex = jedis.lindex(oneSymbol, 0);
             for (int i = 0; i < keyLineType.length; i++) {
                 String keyLine = keyLineType[i];
                 String realSymbol = String.format(templateSymbol, symbol, keyLine);
@@ -313,18 +316,18 @@ public class HistoricalDataService {
                 String currIndex = jedis.lindex(realSymbol, position);
                 HistoricalPrice currPrice = JSON.parseObject(currIndex, HistoricalPrice.class);
                 //定位1min起始时间点
-                currPrice = setValueByTime(jedis, currPrice, date, keyLine, realSymbol);
+                currPrice = setValueByTime(jedis, currPrice, date, keyLine, oneSymbol, newIndex, oneLength);
                 if (currPrice == null) {
                     return Message.ONE_MIN_DATA_NOT_FOUND;
                 }
                 //根据上一个K线烛台修正数据
-                setValueByPrev(jedis, onePrice, position, realSymbol);
+                setValueByPrev(jedis, currPrice, position, realSymbol);
             }
             //3、deal 1month data
             String mthSymbol = String.format(templateSymbol, symbol, mthKeyLine);
             Date keyTime = TimeUtil.getKeyTime(date, mthKeyLine);
             String mthFormat = simpleDateFormat.format(keyTime);
-            long length = jedis.llen(mthKeyLine);
+            long length = jedis.llen(mthSymbol);
             String mthIndex = "";
             long mthPosition = 0;
             //数据量小，烛台间隔不稳定，直接从头开始检索
@@ -339,12 +342,12 @@ public class HistoricalDataService {
                 return Message.MONTH_DATA_NOT_FOUND;
             }
             HistoricalPrice mthPrice = JSON.parseObject(mthIndex, HistoricalPrice.class);
-            mthPrice = setValueByTime(jedis, mthPrice, date, mthKeyLine, mthSymbol);
+            mthPrice = setValueByTime(jedis, mthPrice, date, mthKeyLine, oneSymbol, newIndex, oneLength);
             if (mthPrice == null) {
                 return Message.ONE_MIN_DATA_NOT_FOUND;
             }
             //根据上一个K线烛台修正数据
-            setValueByPrev(jedis, onePrice, mthPosition, mthSymbol);
+            setValueByPrev(jedis, mthPrice, mthPosition, mthSymbol);
             return Message.OK;
         } catch (ParseException e) {
             log.error(e.getMessage());
@@ -362,20 +365,31 @@ public class HistoricalDataService {
      * @param price
      * @param date
      * @param keyLine
-     * @param realSymbol
      * @return
      */
-    private HistoricalPrice setValueByTime(Jedis jedis, HistoricalPrice price, Date date, String keyLine, String realSymbol) {
-        List<Date> keyTimes = TimeUtil.getKeyTimes(date, keyLine);
-        long left = keyTimes.get(0).getTime();
-        long right = keyTimes.get(1).getTime();
-        List<String> list = jedis.lrange(realSymbol, left, right);
+    private HistoricalPrice setValueByTime(Jedis jedis, HistoricalPrice price, Date date,
+                                           String keyLine, String oneSymbol, String oneIndex, long oneLength) {
+
+        HistoricalPrice firstPrice = JSON.parseObject(oneIndex, HistoricalPrice.class);
+        long interval = TimeUtil.getInterval(oneKeyLine);
+        List<Date> keyTimes = TimeUtil.getKeyTimes(date, keyLine, firstPrice.getKeyTime());
+        long left = (firstPrice.getKeyTime().getTime() - keyTimes.get(1).getTime()) / interval;
+        long right = (firstPrice.getKeyTime().getTime() - keyTimes.get(0).getTime()) / interval;
+        //针对1min可能有数据丢失情况，上下波动150检索再过滤
+        left = left - indexRange < 0 ? 0 : left - indexRange;
+        right = right + indexRange > oneLength - 1 ? oneLength - 1 : right + indexRange;
+        log.info("left:" + left + ",right:" + right);
+        List<String> list = jedis.lrange(oneSymbol, left, right);
         if (list == null || list.isEmpty()) {
             return null;
         }
-        Stream<HistoricalPrice> historicalPriceStream = list.stream().map(jsonStr -> JSON.parseObject(jsonStr, HistoricalPrice.class));
-        double maxHigh = historicalPriceStream.mapToDouble(HistoricalPrice::getHigh).max().getAsDouble();
-        double minLow = historicalPriceStream.mapToDouble(HistoricalBase::getLow).min().getAsDouble();
+        List<HistoricalPrice> collect = list.stream().map(jsonStr -> JSON.parseObject(jsonStr, HistoricalPrice.class))
+                .filter(s -> TimeUtil.getTimePass(s.getKeyTime(), keyTimes.get(0)) >= 0
+                        && TimeUtil.getTimePass(keyTimes.get(1), s.getKeyTime()) >= 0)
+                .collect(Collectors.toList());
+        double maxHigh = collect.stream().mapToDouble(HistoricalPrice::getHigh).max().getAsDouble();
+        double minLow = collect.stream().mapToDouble(HistoricalPrice::getLow).min().getAsDouble();
+        log.info("1min list size:" + collect.size() + ",maxHigh:" + maxHigh + ",minLow:" + minLow);
         if (PriceUtils.GreaterThan(maxHigh, price.getHigh())) {
             price.setHigh(maxHigh);
         }

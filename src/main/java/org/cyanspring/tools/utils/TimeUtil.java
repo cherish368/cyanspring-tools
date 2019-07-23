@@ -427,12 +427,11 @@ public class TimeUtil {
         return interval;
     }
 
-    public static List<Date> getKeyTimes(Date realTime, String strType) {
+    public static List<Date> getKeyTimes(Date realTime, String strType, Date firstKeyTime) {
         List<Date> list = new ArrayList<>();
         Date keyTime = getKeyTime(realTime, strType);
         list.add(keyTime);
         int length = -1;
-        Calendar now = Calendar.getInstance();
         switch (strType) {
             case "3M":
                 length += 3;
@@ -474,22 +473,19 @@ public class TimeUtil {
                 length += 7 * 1440;
                 break;
             case "MTH":
+                Calendar now = Calendar.getInstance();
                 now.setTime(keyTime);
                 now.set(Calendar.SECOND, 0);
                 now.set(Calendar.MILLISECOND, 0);
                 int actualMaximum = now.getActualMaximum(Calendar.DAY_OF_MONTH);
-                length = 1440 * actualMaximum;
+                length = 1440 * actualMaximum - 1;
                 break;
             default:
                 break;
         }
-        Date nowDate = Clock.getInstance().now();
         Date date = TimeUtil.addDate(keyTime, length, TimeUnit.MINUTES);
-        if (getTimePass(now.getTime(), date) < 0) {
-            now.setTime(nowDate);
-            now.set(Calendar.SECOND, 0);
-            now.set(Calendar.MILLISECOND, 0);
-            date = now.getTime();
+        if (getTimePass(firstKeyTime, date) < 0) {
+            date = firstKeyTime;
         }
         list.add(date);
         return list;
@@ -497,11 +493,12 @@ public class TimeUtil {
     }
 
     public static void main(String[] args) {
-        DateTimeFormatter localFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").withZone(ZoneId.systemDefault());
-        Date beginDate = Date.from(Instant.from(localFormatter.parse("2019-07-19 01:20:00")));
-        String[] keyLineTypeArray = new String[]{"MTH"};
+        DateTimeFormatter localFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm").withZone(ZoneId.systemDefault());
+        Date beginDate = Date.from(Instant.from(localFormatter.parse("2019-06-05 23:59")));
+        Date data = Date.from(Instant.from(localFormatter.parse("2019-07-11 23:59")));
+        String[] keyLineTypeArray = new String[]{"3M", "W", "MTH"};
         for (String keyLineType : keyLineTypeArray) {
-            List<Date> keyTimes = getKeyTimes(beginDate, keyLineType);
+            List<Date> keyTimes = getKeyTimes(beginDate, keyLineType, data);
             if (!keyTimes.isEmpty()) {
                 for (Date date : keyTimes) {
                     System.out.print(keyTimes.size() + ":" + keyLineType + ":" + localFormatter.format(date.toInstant()) + "\n");
