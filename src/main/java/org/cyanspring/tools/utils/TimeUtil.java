@@ -427,50 +427,69 @@ public class TimeUtil {
         return interval;
     }
 
+    /**
+     * 含头含尾
+     * 3min/5min-->1min
+     * 10min/15min-->5min
+     * 30min-->15min
+     * 1h-->30min
+     * 2h-->1h
+     * 4h/6h-->2h
+     * 8h-->4h
+     * 12h-->6h
+     * D-->12h
+     * W-->D
+     * MTH-->D
+     *
+     * @param realTime
+     * @param strType
+     * @param firstKeyTime
+     * @return
+     */
     public static List<Date> getKeyTimes(Date realTime, String strType, Date firstKeyTime) {
         List<Date> list = new ArrayList<>();
         Date keyTime = getKeyTime(realTime, strType);
         list.add(keyTime);
-        int length = -1;
+        int length = 0;
         switch (strType) {
             case "3M":
-                length += 3;
+                length += 2;
                 break;
             case "5M":
-                length += 5;
+                length += 4;
                 break;
             case "10M":
-                length += 10;
+                length += 5;
                 break;
             case "15M":
-                length += 15;
+                length += 10;
                 break;
             case "30M":
-                length += 30;
+                length += 15;
                 break;
             case "1H":
-                length += 60;
+                length += 30;
                 break;
             case "2H":
-                length += 120;
+                length += 60;
                 break;
             case "4H":
-                length += 240;
+                length += 120;
                 break;
             case "6H":
-                length += 360;
+                length += 240;
                 break;
             case "8H":
-                length += 480;
+                length += 240;
                 break;
             case "12H":
-                length += 720;
+                length += 360;
                 break;
             case "D":
-                length += 1440;
+                length += 720;
                 break;
             case "W":
-                length += 7 * 1440;
+                length += 6 * 1440;
                 break;
             case "MTH":
                 Calendar now = Calendar.getInstance();
@@ -478,7 +497,7 @@ public class TimeUtil {
                 now.set(Calendar.SECOND, 0);
                 now.set(Calendar.MILLISECOND, 0);
                 int actualMaximum = now.getActualMaximum(Calendar.DAY_OF_MONTH);
-                length = 1440 * actualMaximum - 1;
+                length = 1440 * (actualMaximum - 1);
                 break;
             default:
                 break;
@@ -496,7 +515,8 @@ public class TimeUtil {
         DateTimeFormatter localFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm").withZone(ZoneId.systemDefault());
         Date beginDate = Date.from(Instant.from(localFormatter.parse("2019-06-05 23:59")));
         Date data = Date.from(Instant.from(localFormatter.parse("2019-07-11 23:59")));
-        String[] keyLineTypeArray = new String[]{"3M", "W", "MTH"};
+        String[] keyLineTypeArray = new String[]{"3M", "5M", "10M", "15M", "30M", "1H", "2H",
+                "4H", "6H", "8H", "12H", "D", "W", "MTH"};
         for (String keyLineType : keyLineTypeArray) {
             List<Date> keyTimes = getKeyTimes(beginDate, keyLineType, data);
             if (!keyTimes.isEmpty()) {

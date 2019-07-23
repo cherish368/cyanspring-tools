@@ -489,3 +489,952 @@
 2019-07-23 09:49:07,691 INFO[org.cyanspring.tools.service.HistoricalDataService:391] - 1min list size:43139,maxHigh:146.80608752286668,minLow:0.03
 2019-07-23 09:49:07,691 INFO[org.cyanspring.tools.service.HistoricalDataService:425] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
 2019-07-23 09:49:07,701 INFO[org.cyanspring.tools.service.HistoricalDataService:58] - 0.36655 minutes
+2019-07-23 09:58:47,104 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,111 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46233
+2019-07-23 09:58:47,300 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 09:58:47,304 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 09:58:47,308 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46235
+2019-07-23 09:58:47,429 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 09:58:47,432 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 09:58:47,437 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46240
+2019-07-23 09:58:47,461 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:10,maxHigh:104.00481984999999,minLow:0.03
+2019-07-23 09:58:47,464 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 09:58:47,467 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46245
+2019-07-23 09:58:47,499 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:15,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 09:58:47,501 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 09:58:47,504 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46260
+2019-07-23 09:58:47,527 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:30,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 09:58:47,532 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 09:58:47,540 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46290
+2019-07-23 09:58:47,570 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:60,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 09:58:47,573 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,579 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46350
+2019-07-23 09:58:47,607 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:120,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 09:58:47,610 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,613 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46470
+2019-07-23 09:58:47,646 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:240,maxHigh:104.34189772583333,minLow:0.03
+2019-07-23 09:58:47,656 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":104.34189772583333,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,658 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46590
+2019-07-23 09:58:47,694 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:360,maxHigh:104.34189772583333,minLow:0.03
+2019-07-23 09:58:47,698 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":104.34189772583333,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,701 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46710
+2019-07-23 09:58:47,732 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:480,maxHigh:104.34189772583333,minLow:0.03
+2019-07-23 09:58:47,755 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":104.34189772583333,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,757 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:46950
+2019-07-23 09:58:47,791 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:720,maxHigh:104.34189772583333,minLow:0.03
+2019-07-23 09:58:47,794 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.16492255875,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,796 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:45931,right:47670
+2019-07-23 09:58:47,852 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:1440,maxHigh:105.16492255875,minLow:0.03
+2019-07-23 09:58:47,855 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.16492255875,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 09:58:47,857 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:40171,right:50550
+2019-07-23 09:58:48,224 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:10019,maxHigh:121.43676189166666,minLow:0.03
+2019-07-23 09:58:48,227 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":121.43676189166666,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 09:58:48,230 INFO[org.cyanspring.tools.service.HistoricalDataService:381] - left:9931,right:53430
+2019-07-23 09:58:49,371 INFO[org.cyanspring.tools.service.HistoricalDataService:392] - 1min list size:43139,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 09:58:49,373 INFO[org.cyanspring.tools.service.HistoricalDataService:426] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 09:58:49,376 INFO[org.cyanspring.tools.service.HistoricalDataService:58] - 0.04435 minutes
+2019-07-23 14:10:27,679 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:264)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:58)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 14:10:28,688 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:264)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:58)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 14:10:29,695 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:264)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:58)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 14:10:30,711 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:264)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:58)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 14:10:31,719 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:264)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:58)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 14:13:49,181 INFO[org.cyanspring.tools.service.HistoricalDataService:457] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:14:06,092 INFO[org.cyanspring.tools.service.HistoricalDataService:457] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:17:58,675 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:19:33,182 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:19:40,813 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 1.7083000000000002 minutes
+2019-07-23 14:20:06,140 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:20:16,333 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:20:48,508 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.7120166666666666 minutes
+2019-07-23 14:20:54,296 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:21:03,134 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:21:10,510 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:21:12,689 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:21:13,879 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46234
+2019-07-23 14:21:13,956 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:21:13,959 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:21:15,077 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9217
+2019-07-23 14:22:01,872 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:22:01,881 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:22:04,357 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:22:04,360 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:22:04,362 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46234
+2019-07-23 14:22:08,378 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:22:08,381 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:22:08,384 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9217
+2019-07-23 14:22:42,955 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:22:42,965 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:22:58,698 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:22:58,701 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:22:58,704 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46234
+2019-07-23 14:23:22,326 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:23:22,328 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:23:22,331 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9217
+2019-07-23 14:28:14,458 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:28:14,466 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:28:31,410 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:28:31,417 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:28:31,421 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46234
+2019-07-23 14:28:33,919 INFO[org.cyanspring.tools.service.HistoricalDataService:424] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:28:33,921 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:28:33,924 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9217
+2019-07-23 14:37:32,251 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,261 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:37:32,442 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:37:32,446 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:37:32,449 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46234
+2019-07-23 14:37:32,563 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:37:32,567 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:37:32,572 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9217
+2019-07-23 14:37:32,574 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 5M list size:2,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:37:32,576 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 14:37:32,578 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9218
+2019-07-23 14:37:32,580 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 5M list size:3,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:37:32,584 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:37:32,588 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:3072,right:3073
+2019-07-23 14:37:32,589 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:37:32,591 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 14:37:32,597 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:1536,right:1537
+2019-07-23 14:37:32,598 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:37:32,599 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,602 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:768,right:769
+2019-07-23 14:37:32,603 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 14:37:32,604 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,607 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:384,right:385
+2019-07-23 14:37:32,607 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:37:32,611 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,613 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:384,right:386
+2019-07-23 14:37:32,614 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:37:32,617 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,626 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:192,right:193
+2019-07-23 14:37:32,629 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:37:32,637 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,640 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:128,right:129
+2019-07-23 14:37:32,642 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:37:32,643 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,646 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:64,right:65
+2019-07-23 14:37:32,648 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:37:32,651 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,654 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:28,right:34
+2019-07-23 14:37:32,659 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - D list size:7,maxHigh:130.523957838375,minLow:0.03
+2019-07-23 14:37:32,662 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":130.523957838375,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,668 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:7,right:36
+2019-07-23 14:37:32,672 INFO[org.cyanspring.tools.service.HistoricalDataService:429] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 14:37:32,688 INFO[org.cyanspring.tools.service.HistoricalDataService:463] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 14:37:32,691 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.0131 minutes
+2019-07-23 14:41:30,474 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,484 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46232
+2019-07-23 14:41:30,645 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:41:30,652 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:41:30,656 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:45930,right:46234
+2019-07-23 14:41:30,715 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:41:30,718 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:41:30,721 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9217
+2019-07-23 14:41:30,722 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 5M list size:2,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:41:30,725 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 14:41:30,728 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:9216,right:9218
+2019-07-23 14:41:30,729 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 5M list size:3,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:41:30,732 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:41:30,734 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:3072,right:3073
+2019-07-23 14:41:30,736 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:41:30,739 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 14:41:30,744 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:1536,right:1537
+2019-07-23 14:41:30,745 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:41:30,748 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,751 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:768,right:769
+2019-07-23 14:41:30,753 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 14:41:30,756 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,761 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:384,right:385
+2019-07-23 14:41:30,763 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:41:30,767 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,771 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:384,right:386
+2019-07-23 14:41:30,774 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:41:30,776 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,779 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:192,right:193
+2019-07-23 14:41:30,780 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:41:30,783 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,786 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:128,right:129
+2019-07-23 14:41:30,787 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:41:30,790 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,793 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:64,right:65
+2019-07-23 14:41:30,793 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:41:30,797 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,803 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:28,right:34
+2019-07-23 14:41:30,805 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - D list size:7,maxHigh:130.523957838375,minLow:0.03
+2019-07-23 14:41:30,808 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":130.523957838375,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 14:41:30,811 INFO[org.cyanspring.tools.service.HistoricalDataService:413] - left:7,right:36
+2019-07-23 14:41:30,815 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 14:41:30,820 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 14:41:42,346 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.20448333333333332 minutes
+2019-07-23 14:49:28,975 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:28,985 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:45930,right:46232
+2019-07-23 14:49:29,271 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:49:29,274 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:49:29,277 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:45930,right:46234
+2019-07-23 14:49:29,325 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:49:29,332 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:49:29,338 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:9216,right:9217
+2019-07-23 14:49:29,340 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:2,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:49:29,342 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 14:49:29,352 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:9216,right:9218
+2019-07-23 14:49:29,357 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:3,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:49:29,362 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:49:29,374 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:3072,right:3073
+2019-07-23 14:49:29,379 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:49:29,385 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 14:49:29,397 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:1536,right:1537
+2019-07-23 14:49:29,399 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:49:29,402 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,404 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:768,right:769
+2019-07-23 14:49:29,408 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 14:49:29,410 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,415 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:384,right:385
+2019-07-23 14:49:29,418 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:49:29,423 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,426 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:384,right:386
+2019-07-23 14:49:29,428 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:49:29,431 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,433 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:192,right:193
+2019-07-23 14:49:29,434 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:49:29,435 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,438 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:128,right:129
+2019-07-23 14:49:29,439 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:49:29,440 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,443 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:64,right:65
+2019-07-23 14:49:29,444 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:49:29,445 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,447 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:28,right:34
+2019-07-23 14:49:29,450 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:130.523957838375,minLow:0.03
+2019-07-23 14:49:29,452 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":130.523957838375,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,455 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - left:7,right:36
+2019-07-23 14:49:29,458 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 14:49:29,494 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 14:49:29,500 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.016 minutes
+2019-07-23 14:53:03,377 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,387 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 1M| left:45930,right:46232
+2019-07-23 14:53:03,569 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:53:03,572 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:53:03,576 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 1M| left:45930,right:46234
+2019-07-23 14:53:03,618 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:53:03,621 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:53:03,624 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 5M| left:9216,right:9217
+2019-07-23 14:53:03,626 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:2,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:53:03,629 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 14:53:03,631 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 5M| left:9216,right:9218
+2019-07-23 14:53:03,633 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:3,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:53:03,636 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:53:03,640 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 15M| left:3072,right:3073
+2019-07-23 14:53:03,641 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:53:03,643 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 14:53:03,649 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 30M| left:1536,right:1537
+2019-07-23 14:53:03,651 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:53:03,654 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,657 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 1H| left:768,right:769
+2019-07-23 14:53:03,660 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 14:53:03,666 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,670 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 2H| left:384,right:385
+2019-07-23 14:53:03,672 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:53:03,679 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,686 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 2H| left:384,right:386
+2019-07-23 14:53:03,687 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:53:03,689 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,693 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 4H| left:192,right:193
+2019-07-23 14:53:03,695 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:53:03,698 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,701 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 6H| left:128,right:129
+2019-07-23 14:53:03,703 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:53:03,704 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,707 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 12H| left:64,right:65
+2019-07-23 14:53:03,709 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:53:03,711 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,716 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - D| left:28,right:34
+2019-07-23 14:53:03,723 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:130.523957838375,minLow:0.03
+2019-07-23 14:53:03,726 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":130.523957838375,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,732 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - D| left:7,right:36
+2019-07-23 14:53:03,736 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 14:53:03,739 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 14:53:03,743 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.013133333333333334 minutes
+2019-07-23 14:56:28,420 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,428 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 3M-->1M| left:45930,right:46232
+2019-07-23 14:56:28,626 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:56:28,629 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:56:28,636 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 5M-->1M| left:45930,right:46234
+2019-07-23 14:56:28,756 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 14:56:28,759 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:56:28,763 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 10M-->5M| left:9216,right:9217
+2019-07-23 14:56:28,765 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:2,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:56:28,767 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 14:56:28,771 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 15M-->5M| left:9216,right:9218
+2019-07-23 14:56:28,773 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:3,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 14:56:28,775 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 14:56:28,778 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 30M-->15M| left:3072,right:3073
+2019-07-23 14:56:28,781 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:56:28,785 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 14:56:28,792 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 1H-->30M| left:1536,right:1537
+2019-07-23 14:56:28,793 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 14:56:28,796 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,800 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 2H-->1H| left:768,right:769
+2019-07-23 14:56:28,801 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 14:56:28,802 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,804 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 4H-->2H| left:384,right:385
+2019-07-23 14:56:28,807 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:56:28,809 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,812 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 6H-->2H| left:384,right:386
+2019-07-23 14:56:28,813 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 14:56:28,814 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,817 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 8H-->4H| left:192,right:193
+2019-07-23 14:56:28,818 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:56:28,821 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,828 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - 12H-->6H| left:128,right:129
+2019-07-23 14:56:28,829 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:56:28,831 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,834 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - D-->12H| left:64,right:65
+2019-07-23 14:56:28,837 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 14:56:28,840 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,842 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - W-->D| left:28,right:34
+2019-07-23 14:56:28,846 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:130.523957838375,minLow:0.03
+2019-07-23 14:56:28,848 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":130.523957838375,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,853 INFO[org.cyanspring.tools.service.HistoricalDataService:412] - MTH-->D| left:7,right:36
+2019-07-23 14:56:28,857 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 14:56:28,862 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 14:56:28,868 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.013949999999999999 minutes
+2019-07-23 15:01:44,003 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,012 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 3M-->1M| left:46080,right:46082
+2019-07-23 15:01:44,181 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:01:44,184 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:01:44,191 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 5M-->1M| left:46080,right:46084
+2019-07-23 15:01:44,248 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:01:44,251 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:01:44,306 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 10M-->5M| left:9216,right:9217
+2019-07-23 15:01:44,307 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:2,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 15:01:44,310 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 15:01:44,315 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 15M-->5M| left:9216,right:9218
+2019-07-23 15:01:44,319 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:3,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 15:01:44,322 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:01:44,326 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 30M-->15M| left:3072,right:3073
+2019-07-23 15:01:44,328 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 15:01:44,331 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 15:01:44,376 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 1H-->30M| left:1536,right:1537
+2019-07-23 15:01:44,378 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 15:01:44,382 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,389 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 2H-->1H| left:768,right:769
+2019-07-23 15:01:44,391 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 15:01:44,394 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,399 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 4H-->2H| left:384,right:385
+2019-07-23 15:01:44,403 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 15:01:44,406 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,410 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 6H-->2H| left:384,right:386
+2019-07-23 15:01:44,411 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 15:01:44,413 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,417 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 8H-->4H| left:192,right:193
+2019-07-23 15:01:44,418 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:01:44,419 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,422 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 12H-->6H| left:128,right:129
+2019-07-23 15:01:44,423 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:01:44,425 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,429 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - D-->12H| left:64,right:65
+2019-07-23 15:01:44,431 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:01:44,434 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,436 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - W-->D| left:28,right:34
+2019-07-23 15:01:44,439 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:130.523957838375,minLow:0.03
+2019-07-23 15:01:44,442 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":130.523957838375,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,445 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - MTH-->D| left:7,right:36
+2019-07-23 15:01:44,450 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 15:01:44,466 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 15:01:44,528 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.01515 minutes
+2019-07-23 15:14:11,581 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,590 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 3M-->1M| left[2019-06-06 00:00]:46080,right[2019-06-05 23:57]:46082
+2019-07-23 15:14:11,767 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:14:11,770 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:14:11,774 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 5M-->1M| left[2019-06-06 00:00]:46080,right[2019-06-05 23:55]:46084
+2019-07-23 15:14:11,822 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:14:11,825 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:14:11,830 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 10M-->5M| left[2019-06-06 00:00]:9216,right[2019-06-05 23:50]:9217
+2019-07-23 15:14:11,831 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:2,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 15:14:11,834 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 15:14:11,839 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 15M-->5M| left[2019-06-06 00:00]:9216,right[2019-06-05 23:45]:9218
+2019-07-23 15:14:11,841 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:3,maxHigh:104.034430420875,minLow:0.03
+2019-07-23 15:14:11,844 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:14:11,849 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 30M-->15M| left[2019-06-06 00:00]:3072,right[2019-06-05 23:30]:3073
+2019-07-23 15:14:11,851 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 15:14:11,854 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 15:14:11,866 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 1H-->30M| left[2019-06-06 00:00]:1536,right[2019-06-05 23:00]:1537
+2019-07-23 15:14:11,868 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 15:14:11,871 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,874 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 2H-->1H| left[2019-06-06 00:00]:768,right[2019-06-05 22:00]:769
+2019-07-23 15:14:11,876 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 15:14:11,878 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,881 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 4H-->2H| left[2019-06-06 00:00]:384,right[2019-06-05 20:00]:385
+2019-07-23 15:14:11,882 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 15:14:11,886 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,891 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 6H-->2H| left[2019-06-06 00:00]:384,right[2019-06-05 18:00]:386
+2019-07-23 15:14:11,892 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 15:14:11,896 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,899 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 8H-->4H| left[2019-06-06 00:00]:192,right[2019-06-05 16:00]:193
+2019-07-23 15:14:11,901 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:14:11,903 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,906 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 12H-->6H| left[2019-06-06 00:00]:128,right[2019-06-05 12:00]:129
+2019-07-23 15:14:11,907 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:14:11,909 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,912 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - D-->12H| left[2019-06-06 00:00]:64,right[2019-06-05 00:00]:65
+2019-07-23 15:14:11,913 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:14:11,916 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,919 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - W-->D| left[2019-06-10 00:00]:28,right[2019-06-03 00:00]:34
+2019-07-23 15:14:11,923 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:130.523957838375,minLow:0.03
+2019-07-23 15:14:11,925 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":130.523957838375,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,928 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - MTH-->D| left[2019-07-01 00:00]:7,right[2019-06-01 00:00]:36
+2019-07-23 15:14:11,932 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 15:14:11,935 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 15:14:11,938 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.012916666666666667 minutes
+2019-07-23 15:23:13,812 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:13,821 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 3M-->1M| left[2019-06-06 00:00]:46079,right[2019-06-05 23:57]:46083
+2019-07-23 15:23:13,997 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:23:14,000 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:23:14,004 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 5M-->1M| left[2019-06-06 00:00]:46079,right[2019-06-05 23:55]:46085
+2019-07-23 15:23:14,061 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:23:14,065 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:23:14,070 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 10M-->5M| left[2019-06-06 00:00]:9215,right[2019-06-05 23:50]:9218
+2019-07-23 15:23:14,072 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:4,maxHigh:104.27255283225,minLow:0.03
+2019-07-23 15:23:14,076 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 15:23:14,078 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 15M-->5M| left[2019-06-06 00:00]:9215,right[2019-06-05 23:45]:9219
+2019-07-23 15:23:14,081 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:5,maxHigh:104.27255283225,minLow:0.03
+2019-07-23 15:23:14,085 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:23:14,088 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 30M-->15M| left[2019-06-06 00:00]:3071,right[2019-06-05 23:30]:3074
+2019-07-23 15:23:14,090 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:4,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 15:23:14,093 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 15:23:14,099 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 1H-->30M| left[2019-06-06 00:00]:1535,right[2019-06-05 23:00]:1538
+2019-07-23 15:23:14,101 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:4,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 15:23:14,104 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,108 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 2H-->1H| left[2019-06-06 00:00]:767,right[2019-06-05 22:00]:770
+2019-07-23 15:23:14,110 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:4,maxHigh:105.13604101,minLow:0.03
+2019-07-23 15:23:14,112 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,116 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 4H-->2H| left[2019-06-06 00:00]:383,right[2019-06-05 20:00]:386
+2019-07-23 15:23:14,119 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:4,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:23:14,121 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,125 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 6H-->2H| left[2019-06-06 00:00]:383,right[2019-06-05 18:00]:387
+2019-07-23 15:23:14,129 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:5,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:23:14,133 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,138 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 8H-->4H| left[2019-06-06 00:00]:191,right[2019-06-05 16:00]:194
+2019-07-23 15:23:14,140 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:4,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:23:14,142 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,149 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 12H-->6H| left[2019-06-06 00:00]:127,right[2019-06-05 12:00]:130
+2019-07-23 15:23:14,152 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:4,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:23:14,156 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,158 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - D-->12H| left[2019-06-06 00:00]:63,right[2019-06-05 00:00]:66
+2019-07-23 15:23:14,161 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:4,maxHigh:112.53114534,minLow:0.03
+2019-07-23 15:23:14,164 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":112.53114534,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,167 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - W-->D| left[2019-06-10 00:00]:27,right[2019-06-03 00:00]:35
+2019-07-23 15:23:14,169 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:9,maxHigh:139.001872055,minLow:0.03
+2019-07-23 15:23:14,170 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":139.001872055,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,174 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - MTH-->D| left[2019-07-01 00:00]:6,right[2019-06-01 00:00]:37
+2019-07-23 15:23:14,177 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:32,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 15:23:14,180 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 15:23:14,184 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.013283333333333334 minutes
+2019-07-23 15:27:17,413 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":103.78216337875,"h":103.8661566145,"kt":"2019-06-05 23:59","l":0.03,"o":103.8661566145,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,422 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 3M-->1M| left[2019-06-06 00:00]:46081,right[2019-06-05 23:57]:46083
+2019-07-23 15:27:17,612 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:27:17,616 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:57","l":0.03,"o":103.66125207749998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:27:17,620 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 5M-->1M| left[2019-06-06 00:00]:46081,right[2019-06-05 23:55]:46085
+2019-07-23 15:27:17,666 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:27:17,669 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":103.92705922333333,"h":103.95446521225,"kt":"2019-06-05 22:55","l":0.03,"o":103.500423093375,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:27:17,677 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 10M-->5M| left[2019-06-06 00:00]:9217,right[2019-06-05 23:50]:9218
+2019-07-23 15:27:17,679 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:2,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:27:17,682 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":103.95633327916666,"h":104.27255283225,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:09:00.000","v":0.0}
+2019-07-23 15:27:17,684 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 15M-->5M| left[2019-06-06 00:00]:9217,right[2019-06-05 23:45]:9219
+2019-07-23 15:27:17,687 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:3,maxHigh:103.95446521225,minLow:0.03
+2019-07-23 15:27:17,689 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":103.92705922333333,"h":104.29726803625,"kt":"2019-06-05 22:45","l":0.03,"o":103.4563971,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 22:59:00.000","v":0.0}
+2019-07-23 15:27:17,692 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 30M-->15M| left[2019-06-06 00:00]:3073,right[2019-06-05 23:30]:3074
+2019-07-23 15:27:17,693 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 15:27:17,696 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":103.82492597749999,"h":104.29726803625,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:29:00.000","v":0.0}
+2019-07-23 15:27:17,704 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 1H-->30M| left[2019-06-06 00:00]:1537,right[2019-06-05 23:00]:1538
+2019-07-23 15:27:17,707 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:2,maxHigh:104.29726803625,minLow:0.03
+2019-07-23 15:27:17,709 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":103.78216337875,"h":104.54035310833333,"kt":"2019-06-05 23:00","l":0.03,"o":103.92705922333333,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,713 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 2H-->1H| left[2019-06-06 00:00]:769,right[2019-06-05 22:00]:770
+2019-07-23 15:27:17,715 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:2,maxHigh:104.54035310833333,minLow:0.03
+2019-07-23 15:27:17,717 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":103.78216337875,"h":105.13604101,"kt":"2019-06-05 22:00","l":0.03,"o":103.21139468249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,722 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 4H-->2H| left[2019-06-06 00:00]:385,right[2019-06-05 20:00]:386
+2019-07-23 15:27:17,724 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:2,maxHigh:105.13604101,minLow:0.03
+2019-07-23 15:27:17,728 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 20:00","l":0.03,"o":103.06530376799999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,731 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 6H-->2H| left[2019-06-06 00:00]:385,right[2019-06-05 18:00]:387
+2019-07-23 15:27:17,733 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:3,maxHigh:105.13604101,minLow:0.03
+2019-07-23 15:27:17,737 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 18:00","l":0.03,"o":102.81970081899999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,741 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 8H-->4H| left[2019-06-06 00:00]:193,right[2019-06-05 16:00]:194
+2019-07-23 15:27:17,742 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:27:17,745 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 16:00","l":0.03,"o":100.81574874583332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,749 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 12H-->6H| left[2019-06-06 00:00]:129,right[2019-06-05 12:00]:130
+2019-07-23 15:27:17,751 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:27:17,754 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":103.78216337875,"h":105.57936490999998,"kt":"2019-06-05 12:00","l":0.03,"o":103.27640428599999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,757 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - D-->12H| left[2019-06-06 00:00]:65,right[2019-06-05 00:00]:66
+2019-07-23 15:27:17,759 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:2,maxHigh:105.57936490999998,minLow:0.03
+2019-07-23 15:27:17,762 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":103.78216337875,"h":112.53114534,"kt":"2019-06-05 00:00","l":0.03,"o":101.99467761025001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-05 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,765 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - W-->D| left[2019-06-10 00:00]:29,right[2019-06-03 00:00]:35
+2019-07-23 15:27:17,767 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:121.43676189166666,minLow:0.03
+2019-07-23 15:27:17,770 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.53490620000001,"h":139.001872055,"kt":"2019-06-03 00:00","l":0.03,"o":112.47172850549998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-08 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,774 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - MTH-->D| left[2019-07-01 00:00]:8,right[2019-06-01 00:00]:37
+2019-07-23 15:27:17,779 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:30,maxHigh:146.80608752286668,minLow:0.03
+2019-07-23 15:27:17,781 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":121.76544833333334,"h":146.80608752286668,"kt":"2019-06-01 00:00","l":0.03,"o":114.57011400000002,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-06-30 23:59:00.000","v":0.0}
+2019-07-23 15:27:17,786 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.012816666666666667 minutes
+2019-07-23 15:33:01,342 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1M lset:{"c":118.06212780600002,"h":118.11828368870835,"kt":"2019-07-06 23:59","l":0.03,"o":118.01952555304169,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,350 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 3M-->1M| left[2019-07-07 00:00]:1441,right[2019-07-06 23:57]:1443
+2019-07-23 15:33:01,531 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:3,maxHigh:118.11828368870835,minLow:0.03
+2019-07-23 15:33:01,534 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_3M lset:{"c":118.06212780600002,"h":118.11828368870835,"kt":"2019-07-06 23:57","l":0.03,"o":118.03667978025,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,538 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 5M-->1M| left[2019-07-07 00:00]:1441,right[2019-07-06 23:55]:1445
+2019-07-23 15:33:01,581 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1M list size:5,maxHigh:118.191826886,minLow:0.03
+2019-07-23 15:33:01,585 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_5M lset:{"c":118.06212780600002,"h":118.191826886,"kt":"2019-07-06 23:55","l":0.03,"o":118.16143411458332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,588 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 10M-->5M| left[2019-07-07 00:00]:289,right[2019-07-06 23:50]:290
+2019-07-23 15:33:01,590 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:2,maxHigh:118.19503299000003,minLow:0.03
+2019-07-23 15:33:01,593 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_10M lset:{"c":118.06212780600002,"h":118.19503299000003,"kt":"2019-07-06 23:50","l":0.03,"o":118.12604451249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,596 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 15M-->5M| left[2019-07-07 00:00]:289,right[2019-07-06 23:45]:291
+2019-07-23 15:33:01,597 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 5M list size:3,maxHigh:118.22339925166666,minLow:0.03
+2019-07-23 15:33:01,600 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_15M lset:{"c":118.06212780600002,"h":118.22339925166666,"kt":"2019-07-06 23:45","l":0.03,"o":117.88146480075,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,603 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 30M-->15M| left[2019-07-07 00:00]:97,right[2019-07-06 23:30]:98
+2019-07-23 15:33:01,604 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 15M list size:2,maxHigh:118.37873313,minLow:0.03
+2019-07-23 15:33:01,607 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_30M lset:{"c":118.06212780600002,"h":118.37873313,"kt":"2019-07-06 23:30","l":0.03,"o":118.3557408005,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,612 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 1H-->30M| left[2019-07-07 00:00]:49,right[2019-07-06 23:00]:50
+2019-07-23 15:33:01,614 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 30M list size:2,maxHigh:118.65136205,minLow:0.03
+2019-07-23 15:33:01,616 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_1H lset:{"c":118.06212780600002,"h":118.65136205,"kt":"2019-07-06 23:00","l":0.03,"o":117.95278242475001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,620 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 2H-->1H| left[2019-07-07 00:00]:25,right[2019-07-06 22:00]:26
+2019-07-23 15:33:01,621 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 1H list size:2,maxHigh:118.65136205,minLow:0.03
+2019-07-23 15:33:01,624 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_2H lset:{"c":118.06212780600002,"h":118.65136205,"kt":"2019-07-06 22:00","l":0.03,"o":118.0100281995,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,627 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 4H-->2H| left[2019-07-07 00:00]:13,right[2019-07-06 20:00]:14
+2019-07-23 15:33:01,628 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:2,maxHigh:119.84365056,minLow:0.03
+2019-07-23 15:33:01,631 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_4H lset:{"c":118.06212780600002,"h":119.84365056,"kt":"2019-07-06 20:00","l":0.03,"o":119.59563285975,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,635 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 6H-->2H| left[2019-07-07 00:00]:13,right[2019-07-06 18:00]:15
+2019-07-23 15:33:01,636 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 2H list size:3,maxHigh:120.51327118,minLow:0.03
+2019-07-23 15:33:01,639 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_6H lset:{"c":118.06212780600002,"h":120.51327118,"kt":"2019-07-06 18:00","l":0.03,"o":120.28443306474999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,642 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 8H-->4H| left[2019-07-07 00:00]:7,right[2019-07-06 16:00]:8
+2019-07-23 15:33:01,644 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 4H list size:2,maxHigh:122.149287885,minLow:0.03
+2019-07-23 15:33:01,647 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_8H lset:{"c":118.06212780600002,"h":122.149287885,"kt":"2019-07-06 16:00","l":0.03,"o":120.94305990000001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,650 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - 12H-->6H| left[2019-07-07 00:00]:5,right[2019-07-06 12:00]:6
+2019-07-23 15:33:01,652 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 6H list size:2,maxHigh:122.149287885,minLow:0.03
+2019-07-23 15:33:01,654 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_12H lset:{"c":118.06212780600002,"h":122.149287885,"kt":"2019-07-06 12:00","l":0.03,"o":119.02457757750001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,659 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - D-->12H| left[2019-07-07 00:00]:3,right[2019-07-06 00:00]:4
+2019-07-23 15:33:01,661 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - 12H list size:2,maxHigh:122.149287885,minLow:0.03
+2019-07-23 15:33:01,664 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_D lset:{"c":118.06212780600002,"h":122.149287885,"kt":"2019-07-06 00:00","l":0.03,"o":118.30630341666668,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,667 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - W-->D| left[2019-07-08 00:00]:1,right[2019-07-01 00:00]:7
+2019-07-23 15:33:01,669 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:127.40629290833336,minLow:0.03
+2019-07-23 15:33:01,673 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_W lset:{"c":118.06212780600002,"h":136.96294405666666,"kt":"2019-07-01 00:00","l":0.03,"o":133.39519784499998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 15:33:01,677 INFO[org.cyanspring.tools.service.HistoricalDataService:407] - MTH-->D| left[2019-07-08 00:00]:1,right[2019-07-01 00:00]:7
+2019-07-23 15:33:01,680 INFO[org.cyanspring.tools.service.HistoricalDataService:432] - D list size:7,maxHigh:127.40629290833336,minLow:0.03
+2019-07-23 15:33:01,683 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - H_INDEX_LTCUSD_MTH lset:{"c":120.17085532760001,"h":146.80608752286668,"kt":"2019-07-01 00:00","l":0.03,"o":121.76544833333334,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-08 00:00:00.000","v":0.0}
+2019-07-23 15:33:01,686 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.011733333333333333 minutes
+2019-07-23 16:01:33,570 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_1M lset:{"c":118.06212780600002,"h":118.11828368870835,"kt":"2019-07-06 23:59","l":0.03,"o":118.01952555304169,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,577 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 3M-->1M| left[2019-07-06 23:59]:1441,right[2019-07-06 23:57]:1443
+2019-07-23 16:01:33,753 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 1M list size:2,maxHigh:118.07946688533332,minLow:117.97852509183333
+2019-07-23 16:01:33,757 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_3M lset:{"c":118.06212780600002,"h":118.11828368870835,"kt":"2019-07-06 23:57","l":0.03,"o":118.03667978025,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,760 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 5M-->1M| left[2019-07-06 23:59]:1441,right[2019-07-06 23:55]:1445
+2019-07-23 16:01:33,856 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 1M list size:4,maxHigh:118.191826886,minLow:117.97852509183333
+2019-07-23 16:01:33,859 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_5M lset:{"c":118.06212780600002,"h":118.191826886,"kt":"2019-07-06 23:55","l":0.03,"o":118.16143411458332,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,867 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 10M-->5M| left[2019-07-06 23:55]:289,right[2019-07-06 23:50]:290
+2019-07-23 16:01:33,869 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 5M list size:2,maxHigh:118.19503299000003,minLow:0.03
+2019-07-23 16:01:33,872 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_10M lset:{"c":118.06212780600002,"h":118.19503299000003,"kt":"2019-07-06 23:50","l":0.03,"o":118.12604451249999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,878 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 15M-->5M| left[2019-07-06 23:55]:289,right[2019-07-06 23:45]:291
+2019-07-23 16:01:33,881 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 5M list size:3,maxHigh:118.22339925166666,minLow:0.03
+2019-07-23 16:01:33,884 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_15M lset:{"c":118.06212780600002,"h":118.22339925166666,"kt":"2019-07-06 23:45","l":0.03,"o":117.88146480075,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,888 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 30M-->15M| left[2019-07-06 23:45]:97,right[2019-07-06 23:30]:98
+2019-07-23 16:01:33,890 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 15M list size:2,maxHigh:118.37873313,minLow:0.03
+2019-07-23 16:01:33,892 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_30M lset:{"c":118.06212780600002,"h":118.37873313,"kt":"2019-07-06 23:30","l":0.03,"o":118.3557408005,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,897 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 1H-->30M| left[2019-07-06 23:30]:49,right[2019-07-06 23:00]:50
+2019-07-23 16:01:33,899 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 30M list size:2,maxHigh:118.65136205,minLow:0.03
+2019-07-23 16:01:33,901 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_1H lset:{"c":118.06212780600002,"h":118.65136205,"kt":"2019-07-06 23:00","l":0.03,"o":117.95278242475001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,903 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 2H-->1H| left[2019-07-06 23:00]:25,right[2019-07-06 22:00]:26
+2019-07-23 16:01:33,905 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 1H list size:2,maxHigh:118.65136205,minLow:0.03
+2019-07-23 16:01:33,907 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_2H lset:{"c":118.06212780600002,"h":118.65136205,"kt":"2019-07-06 22:00","l":0.03,"o":118.0100281995,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,910 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 4H-->2H| left[2019-07-06 22:00]:13,right[2019-07-06 20:00]:14
+2019-07-23 16:01:33,911 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 2H list size:2,maxHigh:119.84365056,minLow:0.03
+2019-07-23 16:01:33,912 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_4H lset:{"c":118.06212780600002,"h":119.84365056,"kt":"2019-07-06 20:00","l":0.03,"o":119.59563285975,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,915 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 6H-->2H| left[2019-07-06 22:00]:13,right[2019-07-06 18:00]:15
+2019-07-23 16:01:33,915 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 2H list size:3,maxHigh:120.51327118,minLow:0.03
+2019-07-23 16:01:33,917 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_6H lset:{"c":118.06212780600002,"h":120.51327118,"kt":"2019-07-06 18:00","l":0.03,"o":120.28443306474999,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,921 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 8H-->4H| left[2019-07-06 20:00]:7,right[2019-07-06 16:00]:8
+2019-07-23 16:01:33,926 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 4H list size:2,maxHigh:122.149287885,minLow:0.03
+2019-07-23 16:01:33,929 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_8H lset:{"c":118.06212780600002,"h":122.149287885,"kt":"2019-07-06 16:00","l":0.03,"o":120.94305990000001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,931 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - 12H-->6H| left[2019-07-06 18:00]:5,right[2019-07-06 12:00]:6
+2019-07-23 16:01:33,932 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 6H list size:2,maxHigh:122.149287885,minLow:0.03
+2019-07-23 16:01:33,934 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_12H lset:{"c":118.06212780600002,"h":122.149287885,"kt":"2019-07-06 12:00","l":0.03,"o":119.02457757750001,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,937 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - D-->12H| left[2019-07-06 12:00]:3,right[2019-07-06 00:00]:4
+2019-07-23 16:01:33,940 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - 12H list size:2,maxHigh:122.149287885,minLow:0.03
+2019-07-23 16:01:33,942 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_D lset:{"c":118.06212780600002,"h":122.149287885,"kt":"2019-07-06 00:00","l":0.03,"o":118.30630341666668,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,946 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - W-->D| left[2019-07-07 00:00]:1,right[2019-07-01 00:00]:7
+2019-07-23 16:01:33,948 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - D list size:7,maxHigh:127.40629290833336,minLow:0.03
+2019-07-23 16:01:33,950 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_W lset:{"c":118.06212780600002,"h":136.96294405666666,"kt":"2019-07-01 00:00","l":0.03,"o":133.39519784499998,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-06 23:59:00.000","v":0.0}
+2019-07-23 16:01:33,955 INFO[org.cyanspring.tools.service.HistoricalDataService:406] - MTH-->D| left[2019-07-08 00:00]:0,right[2019-07-01 00:00]:7
+2019-07-23 16:01:33,958 INFO[org.cyanspring.tools.service.HistoricalDataService:430] - D list size:8,maxHigh:127.40629290833336,minLow:0.03
+2019-07-23 16:01:33,960 INFO[org.cyanspring.tools.service.HistoricalDataService:464] - H_INDEX_LTCUSD_MTH lset:{"c":120.17085532760001,"h":146.80608752286668,"kt":"2019-07-01 00:00","l":0.03,"o":121.76544833333334,"sc":"INDEX","sm":"LTCUSD","to":0.0,"ts":"2019-07-08 00:00:00.000","v":0.0}
+2019-07-23 16:01:33,967 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.012766666666666667 minutes
+2019-07-23 16:11:49,332 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.005849999999999999 minutes
+2019-07-23 16:13:36,451 INFO[org.cyanspring.tools.service.HistoricalDataService:62] - 0.6993333333333334 minutes
+2019-07-23 17:13:25,965 INFO[org.cyanspring.tools.service.HistoricalDataService:308] - 2.4017 minutes
+2019-07-23 17:28:47,790 INFO[org.cyanspring.tools.service.HistoricalDataService:310] - 0.36993333333333334 minutes
+2019-07-23 17:29:38,952 INFO[org.cyanspring.tools.service.HistoricalDataService:310] - 0.37238333333333334 minutes
+2019-07-23 17:30:19,311 INFO[org.cyanspring.tools.service.HistoricalDataService:310] - 0.37096666666666667 minutes
+2019-07-23 17:49:26,991 INFO[org.cyanspring.tools.service.HistoricalDataService:308] - 0.0037166666666666667 minutes
+2019-07-23 17:49:52,396 INFO[org.cyanspring.tools.service.HistoricalDataService:63] - 0.4322 minutes
+2019-07-23 17:53:29,219 INFO[org.cyanspring.tools.service.HistoricalDataService:310] - 0.36806666666666665 minutes
+2019-07-23 17:53:29,252 INFO[org.cyanspring.tools.service.HistoricalDataService:504] - INDEX_BTCUSD_1M lset:{"c":431.74,"h":431.86,"kt":"2016-01-04 04:17","l":1.4,"o":431.86,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-01-04 04:17:27.000","v":0.0}
+2019-07-23 17:54:06,000 INFO[org.cyanspring.tools.service.HistoricalDataService:310] - 0.3712666666666667 minutes
+2019-07-23 18:08:50,481 INFO[org.cyanspring.tools.service.HistoricalDataService:308] - 0.3708666666666666 minutes
+2019-07-23 18:08:50,519 INFO[org.cyanspring.tools.service.HistoricalDataService:487] - INDEX_BTCUSD_1M lset:{"c":431.74,"h":431.86,"kt":"2016-01-04 04:17","l":1.4,"o":431.86,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-01-04 04:17:27.000","v":0.0}
+2019-07-23 18:10:49,114 INFO[org.cyanspring.tools.service.HistoricalDataService:287] - 0.41218333333333335 minutes
+2019-07-23 18:12:34,848 INFO[org.cyanspring.tools.service.HistoricalDataService:288] - 0.36906666666666665 minutes
+2019-07-23 18:12:34,888 INFO[org.cyanspring.tools.service.HistoricalDataService:466] - INDEX_BTCUSD_1M lset:{"c":694.05,"h":694.05,"kt":"2016-06-15 18:46","l":1.4,"o":694.05,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-06-15 18:46:52.000","v":0.0}
+2019-07-23 19:03:33,406 INFO[org.cyanspring.tools.service.HistoricalDataService:288] - 0.37 minutes
+2019-07-23 19:03:33,447 INFO[org.cyanspring.tools.service.HistoricalDataService:474] - INDEX_BTCUSD_1M lset:{"c":694.05,"h":694.05,"kt":"2016-06-15 18:46","l":1.4,"o":694.05,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-06-15 18:46:52.000","v":0.0}
+2019-07-23 19:22:04,556 INFO[org.cyanspring.tools.service.HistoricalDataService:288] - 0.3698166666666667 minutes
+2019-07-23 19:22:04,600 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - INDEX_BTCUSD_1M lset:{"c":694.05,"h":694.05,"kt":"2016-06-15 18:46","l":1.4,"o":694.05,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-06-15 18:46:52.000","v":0.0}
+2019-07-23 19:23:13,616 INFO[org.cyanspring.tools.service.HistoricalDataService:288] - 0.37076666666666663 minutes
+2019-07-23 19:23:13,658 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - INDEX_BTCUSD_1M lset:{"c":694.05,"h":694.05,"kt":"2016-06-15 18:46","l":1.4,"o":694.05,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-06-15 18:46:52.000","v":0.0}
+2019-07-23 19:24:03,006 INFO[org.cyanspring.tools.service.HistoricalDataService:288] - 0.3713166666666667 minutes
+2019-07-23 19:24:03,049 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - INDEX_BTCUSD_1M lset:{"c":694.05,"h":694.05,"kt":"2016-06-15 18:46","l":1.4,"o":694.05,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-06-15 18:46:52.000","v":0.0}
+2019-07-23 19:24:52,680 INFO[org.cyanspring.tools.service.HistoricalDataService:288] - 0.37151666666666666 minutes
+2019-07-23 19:24:52,722 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - INDEX_BTCUSD_1M lset:{"c":694.05,"h":694.05,"kt":"2016-06-15 18:46","l":1.4,"o":694.05,"sc":"INDEX","sm":"BTCUSD","to":0.0,"ts":"2016-06-15 18:46:52.000","v":0.0}
+2019-07-23 19:30:46,325 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:265)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:59)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 19:30:47,334 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:265)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:59)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 19:30:48,350 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:265)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:59)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 19:30:49,366 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:265)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:59)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 19:30:50,374 ERROR[org.cyanspring.tools.common.JedisService:92] - get redis master1 failed!
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:88)
+	at org.cyanspring.tools.common.JedisService.getJedis(JedisService.java:75)
+	at org.cyanspring.tools.service.HistoricalDataService.updateByValue(HistoricalDataService.java:265)
+	at org.cyanspring.tools.service.HistoricalDataService.main(HistoricalDataService.java:59)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 12 more
+2019-07-23 19:33:21,281 INFO[org.cyanspring.tools.service.HistoricalDataService:472] - H_SMARTBIT_XLTCUSD_1M lset:{"c":140.101,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":50.65430032509822,"ts":"2019-06-23 12:36:00.000","v":28389.0}
+2019-07-23 19:34:18,738 INFO[org.cyanspring.tools.service.HistoricalDataService:472] - H_SMARTBIT_XLTCUSD_1M lset:{"c":140.101,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":50.65430032509822,"ts":"2019-06-23 12:36:00.000","v":28389.0}
+2019-07-23 19:34:37,537 INFO[org.cyanspring.tools.service.HistoricalDataService:472] - H_SMARTBIT_XLTCUSD_1M lset:{"c":140.101,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":50.65430032509822,"ts":"2019-06-23 12:36:00.000","v":28389.0}
+2019-07-23 19:36:06,856 INFO[org.cyanspring.tools.service.HistoricalDataService:472] - H_SMARTBIT_XLTCUSD_1M lset:{"c":140.101,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":50.65430032509822,"ts":"2019-06-23 12:36:00.000","v":28389.0}
+2019-07-23 19:36:41,780 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_1M lset:{"c":140.101,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":50.65430032509822,"ts":"2019-06-23 12:36:00.000","v":28389.0}
+2019-07-23 19:37:33,853 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 1M list size:3,maxHigh:140.186,minLow:1.4
+2019-07-23 19:37:36,535 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_3M lset:{"c":140.063,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":57.56633771763594,"ts":"2019-06-23 12:38:00.000","v":32262.0}
+2019-07-23 19:37:42,400 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 1M list size:5,maxHigh:140.186,minLow:1.4
+2019-07-23 19:37:42,403 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_5M lset:{"c":140.174,"h":140.186,"kt":"2019-06-23 12:35","l":1.4,"o":140.105,"sc":"SMARTBIT","sm":"XLTCUSD","to":139.78326495137733,"ts":"2019-06-23 12:39:00.000","v":78341.0}
+2019-07-23 19:37:42,409 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 5M list size:2,maxHigh:140.299,minLow:1.4
+2019-07-23 19:37:42,412 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_10M lset:{"c":140.174,"h":140.299,"kt":"2019-06-23 12:30","l":1.4,"o":140.257,"sc":"SMARTBIT","sm":"XLTCUSD","to":182.592572891734,"ts":"2019-06-23 12:39:00.000","v":102354.0}
+2019-07-23 19:37:42,420 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 5M list size:3,maxHigh:140.299,minLow:1.4
+2019-07-23 19:37:42,423 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_15M lset:{"c":139.979,"h":140.299,"kt":"2019-06-23 12:30","l":1.4,"o":140.257,"sc":"SMARTBIT","sm":"XLTCUSD","to":454.40216127228126,"ts":"2019-06-23 12:44:00.000","v":254587.0}
+2019-07-23 19:37:42,429 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 15M list size:2,maxHigh:140.299,minLow:1.4
+2019-07-23 19:37:42,432 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_30M lset:{"c":139.766,"h":140.299,"kt":"2019-06-23 12:30","l":1.4,"o":140.257,"sc":"SMARTBIT","sm":"XLTCUSD","to":677.4117455548643,"ts":"2019-06-23 12:59:00.000","v":379359.0}
+2019-07-23 19:37:42,438 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 30M list size:2,maxHigh:140.367,minLow:1.4
+2019-07-23 19:37:42,441 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_1H lset:{"c":139.766,"h":140.367,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":2699.2445318798336,"ts":"2019-06-23 12:59:00.000","v":1511830.0}
+2019-07-23 19:37:42,448 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 1H list size:2,maxHigh:140.367,minLow:1.4
+2019-07-23 19:37:42,451 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_2H lset:{"c":139.277,"h":140.367,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":5905.603213022667,"ts":"2019-06-23 13:59:00.000","v":3300075.0}
+2019-07-23 19:37:42,478 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 2H list size:2,maxHigh:140.744,minLow:1.4
+2019-07-23 19:37:42,481 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_4H lset:{"c":140.226,"h":140.744,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":11706.63743550876,"ts":"2019-06-23 15:59:00.000","v":6545267.0}
+2019-07-23 19:37:42,488 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 2H list size:3,maxHigh:140.744,minLow:1.4
+2019-07-23 19:37:42,491 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_6H lset:{"c":139.318,"h":140.744,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":15789.550587464588,"ts":"2019-06-23 17:59:00.000","v":8827092.0}
+2019-07-23 19:37:42,501 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 4H list size:2,maxHigh:140.744,minLow:1.4
+2019-07-23 19:37:42,504 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_8H lset:{"c":140.226,"h":140.744,"kt":"2019-06-23 08:00","l":1.4,"o":140.165,"sc":"SMARTBIT","sm":"XLTCUSD","to":21719.66816988955,"ts":"2019-06-23 15:59:00.000","v":1.2134032E7}
+2019-07-23 19:37:42,509 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 6H list size:2,maxHigh:141.094,minLow:1.4
+2019-07-23 19:37:42,512 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_12H lset:{"c":136.581,"h":141.094,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":56150.974648830335,"ts":"2019-06-23 23:59:00.000","v":3.1142379E7}
+2019-07-23 19:37:42,518 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - 12H list size:2,maxHigh:142.296,minLow:1.4
+2019-07-23 19:37:42,520 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_D lset:{"c":136.581,"h":142.296,"kt":"2019-06-23 00:00","l":1.4,"o":141.333,"sc":"SMARTBIT","sm":"XLTCUSD","to":93422.11607810167,"ts":"2019-06-23 23:59:00.000","v":5.2140211E7}
+2019-07-23 19:37:42,530 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - D list size:7,maxHigh:138.328,minLow:109.56
+2019-07-23 19:37:42,533 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_W lset:{"c":133.395,"h":142.296,"kt":"2019-06-24 00:00","l":109.56,"o":141.333,"sc":"SMARTBIT","sm":"XLTCUSD","to":1194040.4273883442,"ts":"2019-06-29 23:59:00.000","v":5.9698649E8}
+2019-07-23 19:37:42,562 INFO[org.cyanspring.tools.service.HistoricalDataService:439] - D list size:30,maxHigh:146.806,minLow:1.4
+2019-07-23 19:37:42,564 INFO[org.cyanspring.tools.service.HistoricalDataService:473] - H_SMARTBIT_XLTCUSD_MTH lset:{"c":121.765,"h":146.806,"kt":"2019-06-01 00:00","l":1.4,"o":114.57,"sc":"SMARTBIT","sm":"XLTCUSD","to":2693550.026519892,"ts":"2019-06-30 23:59:00.000","v":1.339304827E9}
+2019-07-23 19:37:42,568 INFO[org.cyanspring.tools.service.HistoricalDataService:63] - 1.0191666666666666 minutes
+2019-07-23 19:42:52,456 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_1M lset:{"c":140.101,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":50.65430032509822,"ts":"2019-06-23 12:36:00.000","v":28389.0}
+2019-07-23 19:42:52,526 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 1M list size:3,maxHigh:140.186,minLow:1.4
+2019-07-23 19:42:52,528 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_3M lset:{"c":140.063,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":57.56633771763594,"ts":"2019-06-23 12:38:00.000","v":32262.0}
+2019-07-23 19:42:52,547 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 1M list size:5,maxHigh:140.186,minLow:1.4
+2019-07-23 19:42:52,550 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_5M lset:{"c":140.174,"h":140.186,"kt":"2019-06-23 12:35","l":1.4,"o":140.105,"sc":"SMARTBIT","sm":"XLTCUSD","to":139.78326495137733,"ts":"2019-06-23 12:39:00.000","v":78341.0}
+2019-07-23 19:42:52,559 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 5M list size:2,maxHigh:140.299,minLow:1.4
+2019-07-23 19:42:52,562 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_10M lset:{"c":140.174,"h":140.299,"kt":"2019-06-23 12:30","l":1.4,"o":140.257,"sc":"SMARTBIT","sm":"XLTCUSD","to":182.592572891734,"ts":"2019-06-23 12:39:00.000","v":102354.0}
+2019-07-23 19:42:52,590 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 5M list size:3,maxHigh:140.299,minLow:1.4
+2019-07-23 19:42:52,593 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_15M lset:{"c":139.979,"h":140.299,"kt":"2019-06-23 12:30","l":1.4,"o":140.257,"sc":"SMARTBIT","sm":"XLTCUSD","to":454.40216127228126,"ts":"2019-06-23 12:44:00.000","v":254587.0}
+2019-07-23 19:42:52,600 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 15M list size:2,maxHigh:140.299,minLow:1.4
+2019-07-23 19:42:52,603 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_30M lset:{"c":139.766,"h":140.299,"kt":"2019-06-23 12:30","l":1.4,"o":140.257,"sc":"SMARTBIT","sm":"XLTCUSD","to":677.4117455548643,"ts":"2019-06-23 12:59:00.000","v":379359.0}
+2019-07-23 19:42:52,609 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 30M list size:2,maxHigh:140.367,minLow:1.4
+2019-07-23 19:42:52,612 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_1H lset:{"c":139.766,"h":140.367,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":2699.2445318798336,"ts":"2019-06-23 12:59:00.000","v":1511830.0}
+2019-07-23 19:42:52,618 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 1H list size:2,maxHigh:140.367,minLow:1.4
+2019-07-23 19:42:52,621 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_2H lset:{"c":139.277,"h":140.367,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":5905.603213022667,"ts":"2019-06-23 13:59:00.000","v":3300075.0}
+2019-07-23 19:42:52,627 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 2H list size:2,maxHigh:140.744,minLow:1.4
+2019-07-23 19:42:52,630 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_4H lset:{"c":140.226,"h":140.744,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":11706.63743550876,"ts":"2019-06-23 15:59:00.000","v":6545267.0}
+2019-07-23 19:42:52,637 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 2H list size:3,maxHigh:140.744,minLow:1.4
+2019-07-23 19:42:52,640 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_6H lset:{"c":139.318,"h":140.744,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":15789.550587464588,"ts":"2019-06-23 17:59:00.000","v":8827092.0}
+2019-07-23 19:42:52,645 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 4H list size:2,maxHigh:140.744,minLow:1.4
+2019-07-23 19:42:52,648 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_8H lset:{"c":140.226,"h":140.744,"kt":"2019-06-23 08:00","l":1.4,"o":140.165,"sc":"SMARTBIT","sm":"XLTCUSD","to":21719.66816988955,"ts":"2019-06-23 15:59:00.000","v":1.2134032E7}
+2019-07-23 19:42:52,657 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 6H list size:2,maxHigh:141.094,minLow:1.4
+2019-07-23 19:42:52,661 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_12H lset:{"c":136.581,"h":141.094,"kt":"2019-06-23 12:00","l":1.4,"o":139.495,"sc":"SMARTBIT","sm":"XLTCUSD","to":56150.974648830335,"ts":"2019-06-23 23:59:00.000","v":3.1142379E7}
+2019-07-23 19:42:52,668 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - 12H list size:2,maxHigh:142.296,minLow:1.4
+2019-07-23 19:42:52,675 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_D lset:{"c":136.581,"h":142.296,"kt":"2019-06-23 00:00","l":1.4,"o":141.333,"sc":"SMARTBIT","sm":"XLTCUSD","to":93422.11607810167,"ts":"2019-06-23 23:59:00.000","v":5.2140211E7}
+2019-07-23 19:42:52,689 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - D list size:7,maxHigh:138.328,minLow:109.56
+2019-07-23 19:42:52,692 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_W lset:{"c":133.395,"h":142.296,"kt":"2019-06-24 00:00","l":109.56,"o":141.333,"sc":"SMARTBIT","sm":"XLTCUSD","to":1194040.4273883442,"ts":"2019-06-29 23:59:00.000","v":5.9698649E8}
+2019-07-23 19:42:52,726 INFO[org.cyanspring.tools.service.HistoricalDataService:458] - D list size:30,maxHigh:146.806,minLow:1.4
+2019-07-23 19:42:52,728 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_MTH lset:{"c":121.765,"h":146.806,"kt":"2019-06-01 00:00","l":1.4,"o":114.57,"sc":"SMARTBIT","sm":"XLTCUSD","to":2693550.026519892,"ts":"2019-06-30 23:59:00.000","v":1.339304827E9}
+2019-07-23 19:42:52,732 INFO[org.cyanspring.tools.service.HistoricalDataService:63] - 0.010683333333333333 minutes
+2019-07-23 19:43:07,989 INFO[org.cyanspring.tools.service.HistoricalDataService:492] - H_SMARTBIT_XLTCUSD_1M lset:{"c":140.101,"h":140.186,"kt":"2019-06-23 12:36","l":1.4,"o":140.122,"sc":"SMARTBIT","sm":"XLTCUSD","to":50.65430032509822,"ts":"2019-06-23 12:36:00.000","v":28389.0}
