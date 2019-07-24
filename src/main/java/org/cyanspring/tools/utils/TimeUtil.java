@@ -421,11 +421,7 @@ public class TimeUtil {
             case "D":
                 return 50L;
             case "W":
-<<<<<<< HEAD
-                return 7L;
-=======
                 return 10L;
->>>>>>> 提交
         }
         return 0;
     }
