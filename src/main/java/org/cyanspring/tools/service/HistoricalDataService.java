@@ -2,7 +2,6 @@ package org.cyanspring.tools.service;
 
 import com.alibaba.fastjson.JSON;
 import net.sf.json.JSONArray;
-import org.apache.log4j.PropertyConfigurator;
 import org.cyanspring.tools.common.JedisService;
 import org.cyanspring.tools.common.Message;
 import org.cyanspring.tools.model.HistoricalBase;
@@ -10,23 +9,17 @@ import org.cyanspring.tools.model.HistoricalPrice;
 import org.cyanspring.tools.utils.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.redis.core.RedisConnectionUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import redis.clients.jedis.BinaryClient;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Transaction;
+import redis.clients.jedis.Pipeline;
 
 import java.io.File;
-import java.sql.Time;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.concurrent.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Service
 public class HistoricalDataService {
@@ -54,14 +47,15 @@ public class HistoricalDataService {
         long start = System.currentTimeMillis();
         HistoricalDataService historicalDataService = new HistoricalDataService();
         //simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
-        HistoricalBase historicalBase = new HistoricalBase();
-        historicalBase.setLow(1.4);
-        Message xrpbtc = historicalDataService.updateByValue("XLTCUSD", "2019-06-23 12:36", historicalBase);
-        System.out.println(xrpbtc.getText());
-        //historicalDataService.exportAllJson("XRPBTC", "2019-07-10 00:00", "2019-07-10 01:00");
+//        HistoricalBase historicalBase = new HistoricalBase();
+//        historicalBase.setLow(1.4);
+//        Message xrpbtc = historicalDataService.updateByValue("XLTCUSD", "2019-06-23 12:36", historicalBase);
+//        System.out.println(xrpbtc.getText());
+        historicalDataService.exportAllJson("XLTCUSD", "2019-03-06 00:00", "2019-03-06 02:00");
         long end = System.currentTimeMillis();
         log.info((end - start) * 100 * 0.01 / 1000 / 60 + " minutes");
     }
+
 
     /**
      * K线按时间段导出 1M/3M/5M/10M/15M/.../MTH
@@ -88,42 +82,9 @@ public class HistoricalDataService {
             String oneSymbol = String.format(templateSymbol, symbol, oneKeyLine);
             final Date startOneTime = TimeUtil.getKeyTime(startDate, oneKeyLine);
             final Date endOneTime = TimeUtil.getKeyTime(endDate, oneKeyLine);
-            long endPosition = getPosition(jedis, oneSymbol, oneKeyLine, startDate, startOneTime);
-            //long startPosition = getPosition(jedis, oneSymbol, oneKeyLine, endDate, endOneTime);
-            //考虑1min可能有数据缺失情况，扩大范围向上检索
-            String oneIndex = jedis.lindex(oneSymbol, endPosition);
-            String oneFormat = simpleDateFormat.format(startOneTime);
-            long oneCount = 10000L;
-            if (!oneIndex.contains(oneFormat)) {
-                for (long i = endPosition; i >= 0; i -= oneCount) {
-                    List<String> tempList = jedis.lrange(oneSymbol, i - oneCount, i);
-                    for (String s : tempList) {
-                        if (s.contains(oneFormat)) {
-                            endPosition = i;
-                            break;
-                        }
-                    }
-                }
-            }
-            List<HistoricalPrice> result = new ArrayList<>();
-            while (endPosition >= 0) {
-                String lindex = jedis.lindex(oneSymbol, endPosition);
-                if (!StringUtils.isEmpty(lindex)) {
-                    HistoricalPrice obj = JSON.parseObject(lindex, HistoricalPrice.class);
-                    if (obj.getKeyTime().getTime() <= endOneTime.getTime()) {
-                        result.add(obj);
-                    } else {
-                        break;
-                    }
-                }
-                endPosition--;
-            }
-//            List<String> oneList = jedis.lrange(oneSymbol, startPosition < indexRange ? 0 : startPosition - indexRange, endPosition + indexRange);
-//            List<String> result = oneList.stream().filter(item -> {
-//                HistoricalPrice price = JSON.parseObject(item, HistoricalPrice.class);
-//                return (price.getKeyTime().getTime() >= startOneTime.getTime() &&
-//                        price.getKeyTime().getTime() <= endOneTime.getTime());
-//            }).collect(Collectors.toList());
+            long onePosition = getPosition(jedis, oneSymbol, oneKeyLine, startDate, startOneTime);
+            List<HistoricalPrice> oneList = getListBySearchIndex(jedis, oneSymbol, onePosition, oneKeyLine, startOneTime, endOneTime);
+            List<String> result = oneList.stream().map(s -> JSON.toJSONString(s)).collect(Collectors.toList());
             results.put(oneSymbol, result);
             //2、export 3min/5min/.../1week data
             for (String keyLine : keyLineType) {
@@ -132,36 +93,9 @@ public class HistoricalDataService {
                 if (length == null || length == 0) {
                     return Message.SYMBOL_NO_EXIST.getText();
                 }
-                long rightPosition = getPosition(jedis, realSymbol, keyLine, startDate, null);
-                String allIndex = jedis.lindex(oneSymbol, rightPosition);
-                String allFormat = simpleDateFormat.format(startOneTime);
-                long allCount = 1000L;
-                if (!allIndex.contains(allFormat)) {
-                    for (long j = rightPosition; j >= 0; j -= allCount) {
-                        List<String> tempList = jedis.lrange(realSymbol, j - allCount, j);
-                        for (String s : tempList) {
-                            if (s.contains(allFormat)) {
-                                rightPosition = j;
-                                break;
-                            }
-                        }
-                    }
-                }
-                List<HistoricalPrice> collect = new ArrayList<>();
-                while (rightPosition >= 0) {
-                    String lindex = jedis.lindex(realSymbol, rightPosition);
-                    if (!StringUtils.isEmpty(lindex)) {
-                        HistoricalPrice obj = JSON.parseObject(lindex, HistoricalPrice.class);
-                        if (obj.getKeyTime().getTime() <= endDate.getTime()) {
-                            collect.add(obj);
-                        } else {
-                            break;
-                        }
-                    }
-                    rightPosition--;
-                }
-                //long leftPosition = getPosition(jedis, realSymbol, keyLine, endDate, null);
-                // List<String> collect = jedis.lrange(realSymbol, leftPosition, rightPosition);
+                long otherPosition = getPosition(jedis, realSymbol, keyLine, startDate, null);
+                List<HistoricalPrice> otherList = getListBySearchIndex(jedis, realSymbol, otherPosition, keyLine, startDate, endDate);
+                List<String> collect = otherList.stream().map(s -> JSON.toJSONString(s)).collect(Collectors.toList());
                 results.put(realSymbol, collect);
             }
             //3、export 1month data
@@ -169,23 +103,23 @@ public class HistoricalDataService {
             Long length = jedis.llen(mthSymbol);
             Date startKeyTime = TimeUtil.getKeyTime(startDate, mthKeyLine);
             Date endKeyTime = TimeUtil.getKeyTime(endDate, mthKeyLine);
-            List<String> list = new ArrayList<>();
+            List<String> otherList = new ArrayList<>();
             //月数据量小，从头开始检索
             for (int i = 0; i < length; i++) {
                 String lindex = jedis.lindex(mthSymbol, i);
                 if (!StringUtils.isEmpty(lindex)) {
                     HistoricalPrice historicalPrice = JSON.parseObject(lindex, HistoricalPrice.class);
                     long time = historicalPrice.getKeyTime().getTime();
-                    if (time < startKeyTime.getTime()) {
-                        break;
-                    } else if (time >= startKeyTime.getTime()) {
-                        list.add(JSON.toJSONString(historicalPrice));
-                    } else if (time > endKeyTime.getTime()) {
+                    if (time > endKeyTime.getTime()) {
                         continue;
+                    } else if (time >= startKeyTime.getTime() && time <= endKeyTime.getTime()) {
+                        otherList.add(JSON.toJSONString(historicalPrice));
+                    } else if (time < startKeyTime.getTime()) {
+                        break;
                     }
                 }
             }
-            results.put(mthSymbol, list);
+            results.put(mthSymbol, otherList);
             JSONArray jsonObject = JSONArray.fromObject(results);
             String jsonString = jsonObject.toString();
             String fullPath = PropertiesUtil.getAttribute(nameProperties, nameExport);
@@ -226,6 +160,7 @@ public class HistoricalDataService {
                 long interval = TimeUtil.getInterval(splits[splits.length - 1]);
                 long leftPosition = 0;
                 long rightPosition = length - 1;
+                // TOOD 优化
                 if (!key.contains(mthKeyLine)) {
                     if (key.contains(oneKeyLine)) {
                         //1、deal 1min data
@@ -319,32 +254,9 @@ public class HistoricalDataService {
             //1、deal 1min data
             String oneSymbol = String.format(templateSymbol, symbol, oneKeyLine);
             long onePosition = getPosition(jedis, oneSymbol, oneKeyLine, date, null);
-            String oneIndex = jedis.lindex(oneSymbol, onePosition);
+            onePosition = getPositionBySearchIndex(jedis, oneSymbol, onePosition, oneKeyLine, date);
             long oneLength = jedis.llen(oneSymbol);
-            if (!oneIndex.contains(stringTime)) {
-                //数据量，考虑有缺失数据的情况出现，迭代数据返回查找
-                System.out.println("before onePosition:" + onePosition);
-                String lIndex = "";
-                long oneCount = 10000L;
-                long a = System.currentTimeMillis();
-                for (long i = onePosition; i >= 0; i -= oneCount) {
-                    List<String> list = jedis.lrange(oneSymbol, i - oneCount, i);
-                    for (String s : list) {
-                        if (s.contains(stringTime)) {
-                            lIndex = s;
-                            onePosition = i;
-                            break;
-                        }
-                    }
-                }
-                long b = System.currentTimeMillis();
-                log.info((b - a) * 100 * 0.01 / 1000 / 60 + " minutes");
-                System.out.println("after onePosition:" + onePosition);
-                if (StringUtil.isEmpty(lIndex)) {
-                    return Message.TIME_VALUE_ERROR;
-                }
-                oneIndex = lIndex;
-            }
+            String oneIndex = jedis.lindex(oneSymbol, onePosition);
             HistoricalPrice onePrice = JSON.parseObject(oneIndex, HistoricalPrice.class);
             //对指定的值赋值
             if (base.getHigh() != null) {
@@ -371,27 +283,8 @@ public class HistoricalDataService {
                 Date keyTime = TimeUtil.getKeyTime(date, keyLine);
                 long interval = TimeUtil.getInterval(keyLine);
                 long position = (firstPrice.getKeyTime().getTime() - keyTime.getTime()) / interval;
-                String currIndex = jedis.lindex(realSymbol, position);
-
-                if (!currIndex.contains(simpleDateFormat.format(keyTime))) {
-                    //数据量，考虑有缺失数据的情况出现，迭代数据返回查找
-                    long allCount = 1000L;
-                    String tempString = "";
-                    for (long j = onePosition; j >= 0; j -= allCount) {
-                        List<String> list = jedis.lrange(oneSymbol, j - allCount, j);
-                        for (String string : list) {
-                            if (string.contains(stringTime)) {
-                                tempString = string;
-                                position = j;
-                                break;
-                            }
-                        }
-                    }
-                    if (StringUtil.isEmpty(tempString)) {
-                        return Message.TIME_VALUE_ERROR;
-                    }
-                    currIndex = tempString;
-                }
+                position = getPositionBySearchIndex(jedis, realSymbol, position, keyLine, date);
+                String currIndex = jedis.lindex(oneSymbol, onePosition);
                 HistoricalPrice currPrice = JSON.parseObject(currIndex, HistoricalPrice.class);
                 //定位1min起始时间点
                 currPrice = setValueByTime(jedis, currPrice, date, keyLine, oneSymbol, oneLength, 1000L);
@@ -436,6 +329,97 @@ public class HistoricalDataService {
     }
 
     /**
+     * 如果对应的位置找不到
+     * 减小索引继续查找
+     *
+     * @param jedis
+     * @param symbol
+     * @param position
+     * @param startTime
+     * @return
+     */
+    private long getPositionBySearchIndex(Jedis jedis, String symbol, long position, String keyLine,
+                                          Date startTime) {
+        long count = TimeUtil.getRange(keyLine);
+        String index = jedis.lindex(symbol, position);
+        String format = simpleDateFormat.format(startTime);
+        if (!index.contains(format)) {
+            for (long i = position; i >= 0; i -= count) {
+                Pipeline pipeline = jedis.pipelined();
+                for (long k = i - count; k <= i; k++) {
+                    pipeline.lindex(symbol, k);
+                }
+                List<Object> tempList = pipeline.syncAndReturnAll();
+                System.out.println(tempList.size());
+                for (int j = 0; j < tempList.size(); j++) {
+                    String s = tempList.get(j).toString();
+                    if (s.contains(format)) {
+                        position = i - count + j;
+                        index = s;
+                        break;
+                    }
+                }
+            }
+        }
+        return position;
+    }
+
+    /**
+     * 如果对应的位置找不到
+     * 减小索引继续查找
+     *
+     * @param jedis
+     * @param symbol
+     * @param position
+     * @param startTime
+     * @param endTime
+     * @return
+     */
+    private List<HistoricalPrice> getListBySearchIndex(Jedis jedis, String symbol, long position, String keyLine,
+                                                       Date startTime, Date endTime) {
+        long count = TimeUtil.getRange(keyLine);
+        String index = jedis.lindex(symbol, position);
+        String format = simpleDateFormat.format(startTime);
+        if (!index.contains(format)) {
+            for (long i = position; i >= 0; i -= count) {
+                Pipeline pipeline = jedis.pipelined();
+                for (long k = i - count; k <= i; k++) {
+                    pipeline.lindex(symbol, k);
+                }
+                List<Object> tempList = pipeline.syncAndReturnAll();
+                System.out.println(tempList.size());
+                for (int j = 0; j < tempList.size(); j++) {
+                    String s = tempList.get(j).toString();
+                    if (s.contains(format)) {
+                        position = i - count + j;
+                        index = s;
+                        break;
+                    }
+                }
+            }
+        }
+        List<HistoricalPrice> result = new ArrayList<>();
+        result.add(JSON.parseObject(index, HistoricalPrice.class));
+        position--;
+        while (position >= 0) {
+            String lindex = jedis.lindex(symbol, position);
+            if (!StringUtils.isEmpty(lindex)) {
+                HistoricalPrice obj = JSON.parseObject(lindex, HistoricalPrice.class);
+                if (obj.getKeyTime().getTime() < startTime.getTime()) {
+                    continue;
+                } else if (obj.getKeyTime().getTime() <= endTime.getTime()) {
+                    result.add(obj);
+                } else {
+                    break;
+                }
+            }
+            position--;
+        }
+        return result;
+    }
+
+
+    /**
      * 初始化其他keyline需要取数据的上一个keyline
      *
      * @param prevKeyLines
@@ -476,37 +460,10 @@ public class HistoricalDataService {
         String lIndex = jedis.lindex(dataSymbol, 0);
         HistoricalPrice firstPrice = JSON.parseObject(lIndex, HistoricalPrice.class);
         List<Date> keyTimes = TimeUtil.getKeyTimes(date, keyLine, firstPrice.getKeyTime());
-        long right = (firstPrice.getKeyTime().getTime() - keyTimes.get(0).getTime()) / interval;
-        String allIndex = jedis.lindex(dataSymbol, right);
-        String format = simpleDateFormat.format(keyTimes.get(0));
-        if (!allIndex.contains(format)) {
-            for (long i = right; i >= 0; i -= count) {
-                List<String> tempList = jedis.lrange(dataSymbol, i - count, i);
-                for (String s : tempList) {
-                    if (s.contains(format)) {
-                        right = i;
-                        break;
-                    }
-                }
-            }
-        }
-        List<HistoricalPrice> collect = new ArrayList<>();
-        flag:
-        while (right >= 0) {
-            String lindex = jedis.lindex(dataSymbol, right);
-            if (!StringUtils.isEmpty(lindex)) {
-                HistoricalPrice obj = JSON.parseObject(lindex, HistoricalPrice.class);
-                if (obj.getKeyTime().getTime() <= keyTimes.get(1).getTime()) {
-                    collect.add(obj);
-                } else {
-                    break flag;
-                }
-            }
-            right--;
-        }
+        long position = (firstPrice.getKeyTime().getTime() - keyTimes.get(0).getTime()) / interval;
+        List<HistoricalPrice> collect = getListBySearchIndex(jedis, dataSymbol, position, dataKeyLine, keyTimes.get(0), keyTimes.get(1));
         double maxHigh = collect.stream().mapToDouble(HistoricalPrice::getHigh).max().getAsDouble();
         double minLow = collect.stream().mapToDouble(HistoricalPrice::getLow).min().getAsDouble();
-        //针对同一个时间段内有多个错误数据，数值相差特别大的进行处理 TODO
         log.info(dataKeyLine + " list size:" + collect.size() + ",maxHigh:" + maxHigh + ",minLow:" + minLow);
         if (PriceUtils.GreaterThan(maxHigh, price.getHigh())) {
             price.setHigh(maxHigh);

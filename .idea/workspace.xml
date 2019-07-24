@@ -7,7 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0545e0-07d0-4c20-a141-f703ba5fe150" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService1.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> K
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,9 +46,9 @@
     <session id="1967096356">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.36" value="1" />
@@ -57,14 +61,14 @@
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
           <entry key="class" value="31" />
-          <entry key="java" value="135" />
+          <entry key="java" value="137" />
           <entry key="properties" value="16" />
           <entry key="xml" value="17" />
         </counts>
@@ -72,7 +76,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="31" />
-          <entry key="JAVA" value="135" />
+          <entry key="JAVA" value="137" />
           <entry key="Manifest" value="1" />
           <entry key="Properties" value="16" />
           <entry key="XML" value="17" />
@@ -95,6 +99,7 @@
         </counts>
       </usages-collector>
     </session>
+<<<<<<< HEAD
     <session id="-528912048">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
@@ -145,6 +150,20 @@
         </entry>
       </file>
     </leaf>
+=======
+    <session id="-832132505">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+>>>>>>> K
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -316,43 +335,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="cyanspring-tools2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -556,19 +540,33 @@
       <workItem from="1563532514173" duration="128000" />
       <workItem from="1563757636794" duration="37334000" />
       <workItem from="1563843479344" duration="5661000" />
+<<<<<<< HEAD
       <workItem from="1563849199307" duration="28229000" />
       <workItem from="1563887917790" duration="2825000" />
+=======
+      <workItem from="1563849199307" duration="28356000" />
+      <workItem from="1563931696444" duration="613000" />
+      <workItem from="1563933309484" duration="24000" />
+>>>>>>> K
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="234502000" />
+=======
+    <option name="totallyTimeSpent" value="232441000" />
+>>>>>>> K
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" weight="0.33585477" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
+>>>>>>> K
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -585,10 +583,14 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32936078" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.0080515295" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.45119306" />
+>>>>>>> K
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44577006" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -698,11 +700,49 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PriceUtils.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Date.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/List.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Integer.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Long.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Collections.java" />
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="883" column="16" selection-start-line="883" selection-start-column="16" selection-end-line="883" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="475" column="17" selection-start-line="475" selection-start-column="17" selection-end-line="475" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="1250" column="22" selection-start-line="1250" selection-start-column="22" selection-end-line="1250" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> K
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/model/HistoricalPrice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -747,10 +787,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/remote-spring-redis.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService11.java" />
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/text/DateFormat.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/time/LocalTime.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/time/LocalDate.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Calendar.java" />
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="342" column="24" selection-start-line="342" selection-start-column="24" selection-end-line="342" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/time/LocalTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="140" column="34" selection-start-line="140" selection-start-column="34" selection-end-line="140" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="1787" column="53" selection-start-line="1787" selection-start-column="53" selection-end-line="1787" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="1768" column="22" selection-start-line="1768" selection-start-column="22" selection-end-line="1768" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> K
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/common/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -786,15 +857,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2312">
           <caret line="430" column="9" selection-start-line="430" selection-start-column="9" selection-end-line="430" selection-end-column="9" />
-          <folding>
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Optional.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Properties.java" />
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="132" column="13" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7739">
+          <caret line="433" selection-start-line="433" selection-end-line="433" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> K
     <entry file="file://$PROJECT_DIR$/conf/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/conf/config.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PropertiesUtil.java">
@@ -842,6 +926,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataExportService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="792">
           <caret line="120" column="41" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
         </state>
@@ -854,6 +939,13 @@
         </state>
       </provider>
     </entry>
+=======
+        <state relative-caret-position="-522">
+          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> K
   </component>
   <component name="masterDetails">
     <states>
