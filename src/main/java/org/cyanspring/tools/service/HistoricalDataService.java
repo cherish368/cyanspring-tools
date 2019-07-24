@@ -160,29 +160,18 @@ public class HistoricalDataService {
                 long interval = TimeUtil.getInterval(splits[splits.length - 1]);
                 long leftPosition = 0;
                 long rightPosition = length - 1;
-                // TOOD 优化
+                //1、deal 1min data
+                //2、deal 3min/.../1week data
                 if (!key.contains(mthKeyLine)) {
-                    if (key.contains(oneKeyLine)) {
-                        //1、deal 1min data
-                        String lIndex = jedis.lindex(key, 0);
-                        HistoricalPrice lPrice = JSON.parseObject(lIndex, HistoricalPrice.class);
-                        HistoricalPrice lastPrice = list.get(0);
-                        HistoricalPrice firstPrice = list.get(list.size() - 1);
-                        leftPosition = (lPrice.getKeyTime().getTime() - firstPrice.getKeyTime().getTime()) / interval;
-                        leftPosition = leftPosition - indexRange < 0 ? 0 : leftPosition - indexRange;
-                        rightPosition = (lPrice.getKeyTime().getTime() - lastPrice.getKeyTime().getTime()) / interval;
-                        rightPosition = rightPosition + indexRange > length ? length : rightPosition + indexRange;
-                    } else {
-                        //2、deal 3min/.../1week data
-                        String lIndex = jedis.lindex(key, 0);
-                        HistoricalPrice lPrice = JSON.parseObject(lIndex, HistoricalPrice.class);
-                        HistoricalPrice lastPrice = list.get(0);
-                        HistoricalPrice firstPrice = list.get(list.size() - 1);
-                        leftPosition = (lPrice.getKeyTime().getTime() - firstPrice.getKeyTime().getTime()) / interval;
-                        rightPosition = (lPrice.getKeyTime().getTime() - lastPrice.getKeyTime().getTime()) / interval + 1;
-                    }
-                    //3、deal 1month data
+                    String lIndex = jedis.lindex(key, 0);
+                    HistoricalPrice lPrice = JSON.parseObject(lIndex, HistoricalPrice.class);
+                    HistoricalPrice lastPrice = list.get(0);
+                    HistoricalPrice firstPrice = list.get(list.size() - 1);
+                    rightPosition = (lPrice.getKeyTime().getTime() - lastPrice.getKeyTime().getTime()) / interval;
+                    rightPosition = getPositionBySearchIndex(jedis, key, rightPosition, splits[splits.length - 1], lastPrice.getKeyTime());
+                    leftPosition = getPositionBySearchIndex(jedis, key, leftPosition, splits[splits.length - 1], firstPrice.getKeyTime());
                 }
+                //3、deal 1month data
                 insertOrUpdateModel(list, jedis, key, leftPosition, rightPosition, interval);
             }
         } catch (Exception e) {
@@ -228,6 +217,7 @@ public class HistoricalDataService {
                         flag = true;
                     }
                     if (flag) {
+                        rightPosition = i + 1;
                         break inner;
                     }
                 }

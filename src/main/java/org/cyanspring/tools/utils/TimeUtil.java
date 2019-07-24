@@ -422,6 +422,8 @@ public class TimeUtil {
                 return 50L;
             case "W":
                 return 10L;
+            case "MTH":
+                return 3L;
         }
         return 0;
     }
