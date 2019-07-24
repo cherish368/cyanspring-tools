@@ -8,10 +8,30 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0545e0-07d0-4c20-a141-f703ba5fe150" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService1.java" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> K
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/controller/HistoricalDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/controller/HistoricalDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/local-spring-redis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/mergeEthIndex.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/common/Attribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/common/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/common/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/controller/HistoricalDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/controller/HistoricalDataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/service/HistoricalDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/service/HistoricalDataService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/service/HistoricalEthFiveMinIndexTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/utils/PropertiesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/utils/PropertiesUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/utils/TimeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/org/cyanspring/tools/utils/TimeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cyanspring-tools-1.0-SNAPSHOT/WEB-INF/classes/remote-spring-redis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+>>>>>>> 提交
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +67,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="18" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
@@ -61,38 +81,38 @@
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
           <entry key="class" value="31" />
-          <entry key="java" value="137" />
-          <entry key="properties" value="16" />
-          <entry key="xml" value="17" />
+          <entry key="java" value="146" />
+          <entry key="properties" value="18" />
+          <entry key="xml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="31" />
-          <entry key="JAVA" value="137" />
+          <entry key="JAVA" value="146" />
           <entry key="Manifest" value="1" />
-          <entry key="Properties" value="16" />
-          <entry key="XML" value="17" />
+          <entry key="Properties" value="18" />
+          <entry key="XML" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="java" value="32789" />
+          <entry key="java" value="33546" />
           <entry key="properties" value="88" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="32789" />
+          <entry key="JAVA" value="33546" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="88" />
           <entry key="XML" value="28" />
@@ -162,8 +182,31 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf />
 >>>>>>> K
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="281" column="40" selection-start-line="281" selection-start-column="40" selection-end-line="281" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/TimeUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="423" column="25" selection-start-line="423" selection-start-column="25" selection-end-line="423" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> 提交
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -176,6 +219,7 @@
     <findStrings>
       <find>equal</find>
       <find />
+      <find>getPosition</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,17 +244,22 @@
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/JsonFileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PriceUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/model/HistoricalPrice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/controller/HistoricalDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService11.java" />
         <option value="$PROJECT_DIR$/src/main/resources/remote-spring-redis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/common/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PropertiesUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/TimeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/RedisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/redis.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataExportService.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService1.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/controller/HistoricalDataController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/TimeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService.java" />
+>>>>>>> 提交
       </list>
     </option>
   </component>
@@ -335,15 +384,71 @@
         <subPane>
           <expand>
             <path>
-              <item name="cyanspring-tools2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cyanspring-tools2" type="462c0819:PsiDirectoryNode" />
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cyanspring-tools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cyanspring-tools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> 提交
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,7 +462,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.19761668" />
     <property name="project.structure.side.proportion" value="0.3019802" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -547,11 +652,16 @@
       <workItem from="1563849199307" duration="28356000" />
       <workItem from="1563931696444" duration="613000" />
       <workItem from="1563933309484" duration="24000" />
+<<<<<<< HEAD
 >>>>>>> K
+=======
+      <workItem from="1563933377237" duration="10141000" />
+>>>>>>> 提交
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="234502000" />
 =======
@@ -567,6 +677,15 @@
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
 >>>>>>> K
+=======
+    <option name="totallyTimeSpent" value="242582000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16204691" />
+>>>>>>> 提交
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -584,10 +703,14 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32936078" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.0080515295" />
 =======
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.45119306" />
 >>>>>>> K
+=======
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.637744" />
+>>>>>>> 提交
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44577006" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286334" />
@@ -605,7 +728,11 @@
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
     </layout>
     <layout-to-restore>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33585477" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16204691" />
+>>>>>>> 提交
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -616,16 +743,20 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4164859" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44793928" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44793928" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32936078" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.0080515295" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.637744" />
+>>>>>>> 提交
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.44577006" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -645,6 +776,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/cyanspring-tools" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/org/apache/commons/pool2/impl/BaseObjectPoolConfig.class">
@@ -676,13 +812,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mergeEthIndex.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/model/Index.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/model/Index.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSONArray.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -697,6 +827,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PriceUtils.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -707,6 +838,9 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Long.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Collections.java" />
 =======
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PriceUtils.java" />
+>>>>>>> 提交
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -742,6 +876,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 >>>>>>> K
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/model/HistoricalPrice.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -757,6 +892,10 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/model/HistoricalPrice.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/JedisUtil.java" />
+>>>>>>> 提交
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -764,6 +903,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -773,18 +913,27 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/reflect/Reflection.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/ResourceBundle.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalEthFiveMinIndexTransform.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local-spring-redis.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/JsonFileUtil.java">
+=======
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/reflect/Reflection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="252">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/ResourceBundle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="770" column="39" selection-start-line="770" selection-start-column="39" selection-end-line="770" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 提交
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalEthFiveMinIndexTransform.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local-spring-redis.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/JsonFileUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/remote-spring-redis.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService11.java" />
 <<<<<<< HEAD
@@ -821,6 +970,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 >>>>>>> K
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/common/Message.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -839,6 +989,31 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/stream/DoubleStream.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/OptionalDouble.java" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/common/Message.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/model/HistoricalBase.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/stream/DoubleStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="536" column="19" selection-start-line="536" selection-start-column="19" selection-end-line="536" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/OptionalDouble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 提交
     <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar!/org/apache/commons/httpclient/util/DateUtil.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -846,6 +1021,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/controller/HistoricalDataController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -864,6 +1040,8 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Optional.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Properties.java" />
 =======
+=======
+>>>>>>> 提交
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -881,27 +1059,8 @@
 >>>>>>> K
     <entry file="file://$PROJECT_DIR$/conf/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/conf/config.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PropertiesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/common/JedisService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/PropertiesUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/common/JedisService.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.14/log4j-1.2.14.jar!/org/apache/log4j/PropertyConfigurator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -909,23 +1068,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/RedisConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataExportService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/controller/HistoricalDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/utils/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="423" column="25" selection-start-line="423" selection-start-column="25" selection-end-line="423" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cyanspring/tools/service/HistoricalDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="792">
           <caret line="120" column="41" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
@@ -942,6 +1114,10 @@
 =======
         <state relative-caret-position="-522">
           <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+=======
+        <state relative-caret-position="213">
+          <caret line="281" column="40" selection-start-line="281" selection-start-column="40" selection-end-line="281" selection-end-column="40" />
+>>>>>>> 提交
         </state>
       </provider>
     </entry>

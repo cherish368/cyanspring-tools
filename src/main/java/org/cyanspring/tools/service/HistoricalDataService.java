@@ -279,7 +279,7 @@ public class HistoricalDataService {
                 String realSymbol = String.format(templateSymbol, symbol, keyLine);
                 String firstIndex = jedis.lindex(realSymbol, 0);
                 HistoricalPrice firstPrice = JSON.parseObject(firstIndex, HistoricalPrice.class);
-                //数据量大，烛台间隔稳定，通过间隔计算位置查询，认为数据没有丢失
+                //数据量大，烛台间隔稳定，通过间隔计算位置查询
                 Date keyTime = TimeUtil.getKeyTime(date, keyLine);
                 long interval = TimeUtil.getInterval(keyLine);
                 long position = (firstPrice.getKeyTime().getTime() - keyTime.getTime()) / interval;
