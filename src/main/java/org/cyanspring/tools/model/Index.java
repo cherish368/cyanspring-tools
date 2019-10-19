@@ -8,6 +8,10 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Index implements Cloneable, Serializable {
+
+
+
+
     private String symbol;
     private String source;
     private double value;
