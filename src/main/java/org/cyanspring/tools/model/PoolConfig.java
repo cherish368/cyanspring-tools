@@ -31,7 +31,7 @@ public class PoolConfig {
         this.testWhileIdle = testWhileIdle;
     }
 
-    public PoolConfig(){
+    public PoolConfig() {
         this.maxIdle = 10;
         this.maxTotal = 100;
         this.maxWaitMills = 1000;

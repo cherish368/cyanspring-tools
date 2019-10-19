@@ -37,7 +37,6 @@ public class HistoricalPrice extends HistoricalBase {
     }
 
 
-
     public void refreshData(Index index) {
         if (this.source == null) {
             this.setSource(index.getSource());
