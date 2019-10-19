@@ -392,6 +392,42 @@ public class TimeUtil {
         return keyTime.getTime();
     }
 
+    public static long getRange(String strType) {
+        switch (strType) {
+            case "1M":
+                return 20000L;
+            case "3M":
+                return 15000L;
+            case "5M":
+                return 10000L;
+            case "10M":
+                return 5000L;
+            case "15M":
+                return 3000L;
+            case "30M":
+                return 1500L;
+            case "1H":
+                return 800L;
+            case "2H":
+                return 600L;
+            case "4H":
+                return 400L;
+            case "6H":
+                return 300L;
+            case "8H":
+                return 200L;
+            case "12H":
+                return 100L;
+            case "D":
+                return 50L;
+            case "W":
+                return 10L;
+            case "MTH":
+                return 3L;
+        }
+        return 0;
+    }
+
     public static long getInterval(String strType) {
         long interval = 60000L;
         switch (strType) {
