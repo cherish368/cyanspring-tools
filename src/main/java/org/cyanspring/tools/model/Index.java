@@ -111,4 +111,8 @@ public class Index implements Cloneable, Serializable {
     public String toString() {
         return "[" + this.source + ", " + this.symbol + ", " + this.value + ", " + this.qty + ", " + this.updatedTime + "]";
     }
+
+    public static void main(String[] args) {
+        System.out.printf("111");
+    }
 }
