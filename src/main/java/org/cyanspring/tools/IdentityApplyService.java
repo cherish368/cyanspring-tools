@@ -51,6 +51,12 @@ import com.xx7x.usual.support.CacheVoids;
 @Service("identityApplyService")
 public class IdentityApplyService extends BaseItemService implements IIdentityApplyService {
 
+
+nmcli connection reload
+
+nmcli connection  up enp0s3
+
+
 	@Autowired
 	protected IdentityApplyMapper identityApplyMapper;	
 	@Autowired
